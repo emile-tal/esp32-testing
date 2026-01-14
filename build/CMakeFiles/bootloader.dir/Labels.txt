@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader
+/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader.rule
+/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete.rule
+/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
