@@ -1,4 +1,4 @@
 idf_component_register(
-    SRCS "breath.cpp"
+    SRCS "breathMultipleChannels.cpp" "breathTicks.cpp" "breath.cpp"
     INCLUDE_DIRS "."
 )

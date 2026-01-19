@@ -13,8 +13,9 @@ void app_main(void); // Forward declaration with C linkage
 
 static const char *TAG = "BREATH";
 
-static const gpio_num_t LED_GPIOS[] = {GPIO_NUM_5, GPIO_NUM_2};
-static const ledc_channel_t LEDC_CHANNELS[] = {LEDC_CHANNEL_0, LEDC_CHANNEL_1};
+static const gpio_num_t LED_GPIOS[] = {GPIO_NUM_5, GPIO_NUM_6, GPIO_NUM_7};
+static const ledc_channel_t LEDC_CHANNELS[] = {LEDC_CHANNEL_0, LEDC_CHANNEL_1,
+                                               LEDC_CHANNEL_2};
 
 static constexpr int LED_COUNT =
     sizeof(LED_GPIOS) /
@@ -23,19 +24,18 @@ static constexpr int LED_COUNT =
                           // we have the right number of LEDs
 
 static constexpr ledc_mode_t LEDC_MODE = LEDC_LOW_SPEED_MODE;
-static constexpr ledc_timer_t LEDC_TIMERS[] = {LEDC_TIMER_0, LEDC_TIMER_1};
-static constexpr ledc_timer_bit_t LEDC_RESOLUTIONS[] = {LEDC_TIMER_10_BIT,
-                                                        LEDC_TIMER_8_BIT};
+static constexpr ledc_timer_t LEDC_TIMER = LEDC_TIMER_0;
+static constexpr ledc_timer_bit_t LEDC_RESOLUTION = LEDC_TIMER_10_BIT;
 static constexpr uint32_t LEDC_FREQUENCY = 1000;
 
 static constexpr double pi = M_PI;
-static const long period = 4000;
+static const long periods[] = {4000, 2000, 1000};
 
-void configure_ledc_timer(ledc_timer_t timer, ledc_timer_bit_t resolution) {
+void configure_ledc_timer() {
   ledc_timer_config_t timer_conf = {};
   timer_conf.speed_mode = LEDC_MODE;
-  timer_conf.timer_num = timer;
-  timer_conf.duty_resolution = resolution;
+  timer_conf.timer_num = LEDC_TIMER;
+  timer_conf.duty_resolution = LEDC_RESOLUTION;
   timer_conf.freq_hz = LEDC_FREQUENCY;
   timer_conf.clk_cfg = LEDC_AUTO_CLK;
 
@@ -44,16 +44,15 @@ void configure_ledc_timer(ledc_timer_t timer, ledc_timer_bit_t resolution) {
     ESP_LOGE(TAG, "Failed to configure LEDC timer: %d", err);
   } else {
     ESP_LOGI(TAG, "LEDC timer configured: %u Hz, %d-bit",
-             (unsigned)LEDC_FREQUENCY, (int)resolution);
+             (unsigned)LEDC_FREQUENCY, (int)LEDC_RESOLUTION);
   }
 }
 
-void configure_ledc_channel(ledc_channel_t channel, gpio_num_t gpio,
-                            ledc_timer_t timer) {
+void configure_ledc_channel(ledc_channel_t channel, gpio_num_t gpio) {
   ledc_channel_config_t ch_conf = {};
   ch_conf.speed_mode = LEDC_MODE;
   ch_conf.channel = channel;
-  ch_conf.timer_sel = timer;
+  ch_conf.timer_sel = LEDC_TIMER;
   ch_conf.intr_type = LEDC_INTR_DISABLE;
   ch_conf.gpio_num = gpio;
   ch_conf.duty = 0;
@@ -68,16 +67,15 @@ void configure_ledc_channel(ledc_channel_t channel, gpio_num_t gpio,
 }
 
 void handle_breath(void *pvParameter) {
-  static long start_time = xTaskGetTickCount();
-  const uint32_t max_dutys[] = {(1 << LEDC_RESOLUTIONS[0]) - 1,
-                                (1 << LEDC_RESOLUTIONS[1]) - 1};
+  const uint32_t max_duty = (1 << LEDC_RESOLUTION) - 1;
   while (1) {
     long current_time = xTaskGetTickCount();
     long elapsed_time = pdTICKS_TO_MS(current_time - start_time);
     for (int i = 0; i < LED_COUNT; i++) {
-      double phase = 2 * pi * ((double)(elapsed_time % period) / period);
+      double phase =
+          2 * pi * ((double)(elapsed_time % periods[i]) / periods[i]);
       double brightness = (sin(phase) + 1) / 2;
-      uint32_t duty = (uint32_t)(max_dutys[i] * brightness);
+      uint32_t duty = (uint32_t)(max_duty * brightness);
       // Set the duty cycle
       esp_err_t err = ledc_set_duty(LEDC_MODE, LEDC_CHANNELS[i], duty);
       if (err != ESP_OK) {
@@ -93,11 +91,10 @@ void handle_breath(void *pvParameter) {
 }
 
 extern "C" void app_main(void) {
-  for (int i = 0; i < LED_COUNT; i++) {
-    configure_ledc_timer(LEDC_TIMERS[i], LEDC_RESOLUTIONS[i]);
-  }
-  for (int i = 0; i < LED_COUNT; i++) {
-    configure_ledc_channel(LEDC_CHANNELS[i], LED_GPIOS[i], LEDC_TIMERS[i]);
+  static long start_time = xTaskGetTickCount();
+  configure_ledc_timer();
+  for (int i = 0; i < 3; i++) {
+    configure_ledc_channel(LEDC_CHANNELS[i], LED_GPIOS[i]);
   }
   xTaskCreate(handle_breath, "handle_breath", 10000, NULL, 5, NULL);
 }
