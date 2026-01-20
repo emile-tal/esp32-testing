@@ -27,4 +27,4 @@ set confirm off
 set confirm on
 
 # Load application symbols
-file /Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/breath.elf
+file /Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/rgbLED.elf

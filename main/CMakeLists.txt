@@ -1,4 +1,4 @@
 idf_component_register(
-    SRCS "../breath/breath.cpp"
+    SRCS "../rgbLED/rgbLED.cpp"
     INCLUDE_DIRS "."
 )

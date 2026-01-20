@@ -25,26 +25,40 @@ static constexpr int LED_COUNT =
 static constexpr ledc_mode_t LEDC_MODE = LEDC_LOW_SPEED_MODE;
 static constexpr ledc_timer_t LEDC_TIMERS[] = {LEDC_TIMER_0, LEDC_TIMER_1};
 static constexpr ledc_timer_bit_t LEDC_RESOLUTIONS[] = {LEDC_TIMER_10_BIT,
-                                                        LEDC_TIMER_8_BIT};
-static constexpr uint32_t LEDC_FREQUENCY = 1000;
+                                                        LEDC_TIMER_10_BIT};
+static constexpr uint32_t LEDC_FREQUENCYS[] = {1000, 200};
+
+static constexpr uint32_t duty_max_for(ledc_timer_bit_t res) {
+  switch (res) {
+  case LEDC_TIMER_5_BIT:
+    return (1u << 5) - 1;
+  case LEDC_TIMER_8_BIT:
+    return (1u << 8) - 1;
+  case LEDC_TIMER_10_BIT:
+    return (1u << 10) - 1;
+  default:
+    return 0;
+  }
+}
 
 static constexpr double pi = M_PI;
-static const long period = 4000;
+static const long period = 6000;
 
-void configure_ledc_timer(ledc_timer_t timer, ledc_timer_bit_t resolution) {
+void configure_ledc_timer(ledc_timer_t timer, ledc_timer_bit_t resolution,
+                          uint32_t frequency) {
   ledc_timer_config_t timer_conf = {};
   timer_conf.speed_mode = LEDC_MODE;
   timer_conf.timer_num = timer;
   timer_conf.duty_resolution = resolution;
-  timer_conf.freq_hz = LEDC_FREQUENCY;
-  timer_conf.clk_cfg = LEDC_AUTO_CLK;
+  timer_conf.freq_hz = frequency;
+  timer_conf.clk_cfg = LEDC_USE_APB_CLK;
 
   esp_err_t err = ledc_timer_config(&timer_conf);
   if (err != ESP_OK) {
     ESP_LOGE(TAG, "Failed to configure LEDC timer: %d", err);
   } else {
-    ESP_LOGI(TAG, "LEDC timer configured: %u Hz, %d-bit",
-             (unsigned)LEDC_FREQUENCY, (int)resolution);
+    ESP_LOGI(TAG, "LEDC timer configured: %u Hz, %d-bit", (unsigned)frequency,
+             (int)resolution);
   }
 }
 
@@ -69,8 +83,14 @@ void configure_ledc_channel(ledc_channel_t channel, gpio_num_t gpio,
 
 void handle_breath(void *pvParameter) {
   static long start_time = xTaskGetTickCount();
-  const uint32_t max_dutys[] = {(1 << LEDC_RESOLUTIONS[0]) - 1,
-                                (1 << LEDC_RESOLUTIONS[1]) - 1};
+  uint32_t
+      max_dutys[LED_COUNT]; // Better to use actual max duty rather than enum
+                            // values (unless you know what enum values are)
+
+  for (int i = 0; i < LED_COUNT; i++) {
+    max_dutys[i] = duty_max_for(LEDC_RESOLUTIONS[i]);
+  }
+
   while (1) {
     long current_time = xTaskGetTickCount();
     long elapsed_time = pdTICKS_TO_MS(current_time - start_time);
@@ -94,7 +114,8 @@ void handle_breath(void *pvParameter) {
 
 extern "C" void app_main(void) {
   for (int i = 0; i < LED_COUNT; i++) {
-    configure_ledc_timer(LEDC_TIMERS[i], LEDC_RESOLUTIONS[i]);
+    configure_ledc_timer(LEDC_TIMERS[i], LEDC_RESOLUTIONS[i],
+                         LEDC_FREQUENCYS[i]);
   }
   for (int i = 0; i < LED_COUNT; i++) {
     configure_ledc_channel(LEDC_CHANNELS[i], LED_GPIOS[i], LEDC_TIMERS[i]);

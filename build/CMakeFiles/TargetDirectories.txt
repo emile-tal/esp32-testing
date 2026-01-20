@@ -10,7 +10,7 @@
 /Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/flash.dir
 /Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/encrypted-flash.dir
 /Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/_project_elf_src.dir
-/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/breath.elf.dir
+/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/rgbLED.elf.dir
 /Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/size.dir
 /Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/size-files.dir
 /Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/size-components.dir

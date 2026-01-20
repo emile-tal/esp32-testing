@@ -1,15 +1,15 @@
 {
     "version":            "1.2",
-    "project_name":       "breath",
-    "project_version":    "1",
+    "project_name":       "rgbLED",
+    "project_version":    "cb51ea0-dirty",
     "project_path":       "/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter",
     "idf_path":           "/Users/talemile/esp/v5.5.1/esp-idf",
     "build_dir":          "/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build",
     "config_file":        "/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/sdkconfig",
     "config_defaults":    "",
     "bootloader_elf":     "/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf",
-    "app_elf":            "breath.elf",
-    "app_bin":            "breath.bin",
+    "app_elf":            "rgbLED.elf",
+    "app_bin":            "rgbLED.bin",
     "build_type":         "flash_app",
     "git_revision":       "v5.5.1-dirty",
     "target":             "esp32c3",
@@ -1225,7 +1225,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/main/libmain.a",
-            "sources": [ "/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/breath/breath.cpp" ],
+            "sources": [ "/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/rgbLED/rgbLED.cpp" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {
