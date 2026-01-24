@@ -10,6 +10,8 @@ void app_main(void); // Forward declaration with C linkage
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 
+// Static means variable is not accessible outside of this file (ie. not
+// exported if in JS)
 static const char *TAG = "RGBLED";
 
 static const gpio_num_t LED_GPIOS[] = {GPIO_NUM_5, GPIO_NUM_4,
@@ -29,18 +31,26 @@ static constexpr ledc_timer_bit_t LEDC_RESOLUTION = LEDC_TIMER_10_BIT;
 static constexpr uint32_t LEDC_FREQUENCY = 1000;
 
 struct RGB {
-  int r;
-  int g;
-  int b;
+  uint8_t r; // 8-bit unsigned integer - smaller than int which is 32-bits
+  uint8_t g;
+  uint8_t b;
 };
 
 static constexpr RGB colors[] = {
-    {255, 0, 0}, // Red
-    {0, 255, 0}, // Green
-    {0, 0, 255}, // Blue
+    {125, 125, 125}, // Red
+                     //     {0, 255, 0}, // Green
+                     //     {0, 0, 255}, // Blue
 };
 
-int get_rgb_component(const RGB &color, int channel) {
+static constexpr uint16_t gain_values[] = {
+    256, // 256 * 1
+    141, // 256 * 0.55
+    179, // 256 * 0.7
+};
+
+static constexpr int COLOR_COUNT = sizeof(colors) / sizeof(colors[0]);
+
+uint8_t get_rgb_component(const RGB &color, int channel) {
   switch (channel) {
   case 0:
     return color.r;
@@ -66,7 +76,7 @@ static constexpr uint32_t duty_max_for(ledc_timer_bit_t res) {
   }
 }
 
-int get_color_duty(int color) {
+uint32_t get_color_duty(uint8_t color) {
   return color * duty_max_for(LEDC_RESOLUTION) / 255;
 }
 
@@ -105,26 +115,34 @@ void configure_ledc_channel(ledc_channel_t channel, gpio_num_t gpio) {
   }
 }
 
-void handle_rgb(void *pvParameter) {
-  int index = 0;
-  while (1) {
-    while (index < 3) {
-      for (int i = 0; i < LED_COUNT; i++) {
-        const RGB current_color = colors[index];
-        int color_value = get_rgb_component(current_color, i);
-        // Set the duty cycle
-        esp_err_t err = ledc_set_duty(LEDC_MODE, LEDC_CHANNELS[i],
-                                      get_color_duty(color_value));
-        if (err != ESP_OK) {
-          ESP_LOGE(TAG, "ledc_set_duty failed: %d", err);
-        } else {
-          ledc_update_duty(LEDC_MODE, LEDC_CHANNELS[i]);
-        }
-      }
-      vTaskDelay(pdMS_TO_TICKS(1000));
-      index++;
+void apply_color(const RGB &color) {
+  for (int i = 0; i < LED_COUNT; i++) {
+    const uint8_t color_value = get_rgb_component(color, i);
+    uint16_t scaled_value = ((uint32_t)color_value * gain_values[i]) >> 8;
+    if (scaled_value > 255) {
+      scaled_value = 255;
     }
-    index = 0;
+    const uint32_t duty_value = get_color_duty(scaled_value);
+    esp_err_t err = ledc_set_duty(LEDC_MODE, LEDC_CHANNELS[i], duty_value);
+    if (err != ESP_OK) {
+      ESP_LOGE(TAG, "ledc_set_duty failed: %d for channel %d", err,
+               LEDC_CHANNELS[i]);
+    }
+  }
+}
+
+void handle_rgb(void *pvParameter) {
+  while (1) {
+    for (int index = 0; index < COLOR_COUNT; index++) {
+      const RGB &current_color =
+          colors[index]; // Using '&' creates a reference rather than a copy
+                         // (ie. same as getting a property from an object in
+                         // JS) This is useful for performance (avoiding
+                         // copying the object) and it's especially good for
+                         // firmware to clarify what memory we're using
+      apply_color(current_color);
+      vTaskDelay(pdMS_TO_TICKS(1000));
+    }
   }
 }
 
