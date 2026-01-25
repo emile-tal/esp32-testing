@@ -110,231 +110,43 @@
 1541	1581	1766389861053547048	bootloader.elf	6c10a852a85e440c
 1581	1681	1766389861192812995	.bin_timestamp	264982bcd03b4114
 1581	1681	1766389861192812995	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/.bin_timestamp	264982bcd03b4114
-1681	1708	1766389861193150025	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-1681	1708	1766389861193150025	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1766389976867688661	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1766389976867688661	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1766390642483507635	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1766390642483507635	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	39	1766390655812810258	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	39	1766390655812810258	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1766390815034220190	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1766390815034220190	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-6	42	1766390821772384342	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-6	42	1766390821772384342	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-9	37	1766913077524562452	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-9	37	1766913077524562452	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	32	1766913085737812194	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	32	1766913085737812194	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	35	1766913151055056383	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	35	1766913151055056383	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	33	1766913157873935698	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	33	1766913157873935698	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-3	29	1766913161903446390	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-3	29	1766913161903446390	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-8	38	1766913566389639787	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-8	38	1766913566389639787	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	35	1766913597631763482	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	35	1766913597631763482	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1766913674984256467	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1766913674984256467	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1766913693521551483	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1766913693521551483	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	46	1766913945306326530	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	46	1766913945306326530	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	29	1766913950805450412	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	29	1766913950805450412	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-6	42	1766914044909449867	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-6	42	1766914044909449867	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-3	29	1766914051123677213	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-3	29	1766914051123677213	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-9	42	1767001480927206125	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-9	42	1767001480927206125	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	32	1767001488645763807	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	32	1767001488645763807	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1767001545127694149	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1767001545127694149	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	31	1767001552592876075	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	31	1767001552592876075	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	35	1767001846912786269	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	35	1767001846912786269	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	29	1767001854132079786	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	29	1767001854132079786	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-6	40	1767002081020865646	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-6	40	1767002081020865646	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	31	1767002089251791522	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	31	1767002089251791522	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	33	1767002202363708154	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	33	1767002202363708154	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	40	1767002210920573222	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	40	1767002210920573222	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-6	34	1767003442094664723	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-6	34	1767003442094664723	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	32	1767003450131010707	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	32	1767003450131010707	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1767003523604479386	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1767003523604479386	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	32	1767003529374428699	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	32	1767003529374428699	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	40	1767006702525434740	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	40	1767006702525434740	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	31	1767006708511490981	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	31	1767006708511490981	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1767006985934282688	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1767006985934282688	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	31	1767006991504996910	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	31	1767006991504996910	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	39	1767007288130588746	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	39	1767007288130588746	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-3	28	1767007293778181103	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-3	28	1767007293778181103	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	34	1767007476294675289	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	34	1767007476294675289	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-3	29	1767007481968997352	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-3	29	1767007481968997352	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	37	1767007578341850661	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	37	1767007578341850661	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	30	1767007583863106040	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	30	1767007583863106040	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	33	1767007633298208084	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	33	1767007633298208084	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	31	1767007639021017154	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	31	1767007639021017154	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	38	1767007830092954984	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	38	1767007830092954984	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	29	1767007835900592471	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	29	1767007835900592471	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	33	1767007923985519455	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	33	1767007923985519455	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-3	29	1767007929337705869	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-3	29	1767007929337705869	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-8	35	1767698988323176979	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-8	35	1767698988323176979	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-3	29	1767698994416652113	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-3	29	1767698994416652113	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	32	1767702128717199147	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	32	1767702128717199147	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1767702137317098691	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1767702137317098691	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-15	44	1768174414190054412	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-15	44	1768174414190054412	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	33	1768174431522261603	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	33	1768174431522261603	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	30	1768174439239433358	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	30	1768174439239433358	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	34	1768174502392898437	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	34	1768174502392898437	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	38	1768174508585209275	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	38	1768174508585209275	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	39	1768174585046176803	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	39	1768174585046176803	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	34	1768174592106894279	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	34	1768174592106894279	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	37	1768174814611899133	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	37	1768174814611899133	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	32	1768174820506056498	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	32	1768174820506056498	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-10	37	1768771524383628273	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-10	37	1768771524383628273	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	32	1768771538857298976	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	32	1768771538857298976	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	32	1768771601512387569	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	32	1768771601512387569	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-6	39	1768783199257676625	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-6	39	1768783199257676625	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1768783264914572723	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1768783264914572723	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	46	1768783288014755649	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	46	1768783288014755649	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	33	1768783297633522105	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	33	1768783297633522105	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	37	1768784585479147944	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	37	1768784585479147944	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	37	1768784653528234066	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	37	1768784653528234066	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	37	1768784682568987210	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	37	1768784682568987210	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	36	1768784718601414451	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	36	1768784718601414451	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	40	1768784773733981105	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	40	1768784773733981105	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1768784790855546564	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1768784790855546564	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	30	1768784799912688958	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	30	1768784799912688958	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-7	34	1768887121876385311	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-7	34	1768887121876385311	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	37	1768887626194677656	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	37	1768887626194677656	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	34	1768887636057858644	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	34	1768887636057858644	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1768887903112020822	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1768887903112020822	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-6	32	1768887911118110750	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-6	32	1768887911118110750	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	34	1768888138069771674	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	34	1768888138069771674	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	31	1768888145629391335	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	31	1768888145629391335	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-6	34	1768890432480430819	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-6	34	1768890432480430819	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	35	1768890441050256637	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	35	1768890441050256637	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-6	40	1768892029043887800	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-6	40	1768892029043887800	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-6	41	1768892158366187812	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-6	41	1768892158366187812	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	38	1768892245812091278	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	38	1768892245812091278	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	40	1768892264091359624	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	40	1768892264091359624	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	38	1768892327445451177	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	38	1768892327445451177	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	35	1768892351479666845	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	35	1768892351479666845	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	36	1768892364582813425	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	36	1768892364582813425	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	40	1768892507281280994	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	40	1768892507281280994	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	31	1768892517567635677	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	31	1768892517567635677	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	39	1768892829298590903	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	39	1768892829298590903	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	35	1768892836020881449	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	35	1768892836020881449	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1768893074745962769	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1768893074745962769	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	33	1768893081665418625	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	33	1768893081665418625	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	37	1768893184235333370	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	37	1768893184235333370	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	31	1768893189867389812	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	31	1768893189867389812	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	34	1768893452393814649	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	34	1768893452393814649	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	34	1768893459083798758	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	34	1768893459083798758	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-9	49	1769208446297813860	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-9	49	1769208446297813860	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	38	1769208571810283803	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	38	1769208571810283803	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	38	1769208701973960868	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	38	1769208701973960868	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	34	1769208711109017401	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	34	1769208711109017401	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	35	1769208761915765059	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	35	1769208761915765059	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	32	1769208771724683123	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	32	1769208771724683123	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	31	1769208778422666490	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	31	1769208778422666490	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	37	1769209040755996437	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-4	37	1769209040755996437	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-8	39	1769209130437744274	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-8	39	1769209130437744274	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1769209194284495360	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1769209194284495360	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	34	1769209309049210095	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	34	1769209309049210095	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1769209456057419407	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
-5	36	1769209456057419407	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+10	38	1769278099722082497	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+10	38	1769278099722082497	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+8	38	1769278244785370239	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+8	38	1769278244785370239	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+5	34	1769281979904921021	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+5	34	1769281979904921021	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+4	31	1769281985774695666	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+4	31	1769281985774695666	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+5	40	1769282215028423142	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+5	40	1769282215028423142	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+5	36	1769282319626997161	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+5	36	1769282319626997161	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+6	35	1769301515773963510	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+6	35	1769301515773963510	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+5	33	1769301598061422674	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+5	33	1769301598061422674	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+4	33	1769301606452075323	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+4	33	1769301606452075323	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+5	36	1769306416706801594	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+5	36	1769306416706801594	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+5	35	1769306502005596399	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+5	35	1769306502005596399	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+5	36	1769306740376819459	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+5	36	1769306740376819459	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+6	43	1769307068615201564	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+6	43	1769307068615201564	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+6	38	1769307150339346493	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+6	38	1769307150339346493	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+6	34	1769307165223732878	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+6	34	1769307165223732878	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+4	30	1769307170042373531	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+4	30	1769307170042373531	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+5	38	1769307305077163238	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+5	38	1769307305077163238	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+5	32	1769307311151537690	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+5	32	1769307311151537690	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+5	37	1769307483763933703	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+5	37	1769307483763933703	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+5	34	1769307513009906711	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855
+5	34	1769307513009906711	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	4c7fde4de0ded855

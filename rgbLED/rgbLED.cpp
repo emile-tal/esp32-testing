@@ -9,57 +9,73 @@ void app_main(void); // Forward declaration with C linkage
 #include "esp_log.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
+#include <cmath>
 
-// Static means variable is not accessible outside of this file (ie. not
-// exported if in JS)
 static const char *TAG = "RGBLED";
+static constexpr uint32_t period = 8000;
+struct RgbLed {
+  ledc_mode_t mode;
+  ledc_timer_t timer;
+  ledc_timer_bit_t resolution;
+  uint32_t frequency;
+  static constexpr int channel_count = 3;
+  ledc_channel_t channels[channel_count];
+  gpio_num_t gpios[channel_count];
+  uint16_t gain_values[channel_count];
+  uint8_t gamma_table[256];
+};
 
-static const gpio_num_t LED_GPIOS[] = {GPIO_NUM_5, GPIO_NUM_4,
-                                       GPIO_NUM_2}; // 5 - R, 4 - G, 2 - B
-static const ledc_channel_t LEDC_CHANNELS[] = {LEDC_CHANNEL_0, LEDC_CHANNEL_1,
-                                               LEDC_CHANNEL_2};
+struct Hsv {
+  float h;
+  float s;
+  float v;
+};
 
-static constexpr int LED_COUNT =
-    sizeof(LED_GPIOS) /
-    sizeof(LED_GPIOS[0]); // sizeof returns the number of memory bytes 'this'
-                          // takes. ie. this is a smart way of always ensuring
-                          // we have the right number of LEDs
-
-static constexpr ledc_mode_t LEDC_MODE = LEDC_LOW_SPEED_MODE;
-static constexpr ledc_timer_t LEDC_TIMER = LEDC_TIMER_0;
-static constexpr ledc_timer_bit_t LEDC_RESOLUTION = LEDC_TIMER_10_BIT;
-static constexpr uint32_t LEDC_FREQUENCY = 1000;
-
-struct RGB {
-  uint8_t r; // 8-bit unsigned integer - smaller than int which is 32-bits
+struct Rgb {
+  uint8_t r;
   uint8_t g;
   uint8_t b;
 };
 
-static constexpr RGB colors[] = {
-    {125, 125, 125}, // Red
-                     //     {0, 255, 0}, // Green
-                     //     {0, 0, 255}, // Blue
-};
+Rgb hsv_to_rgb(const Hsv &hsv) {
+  float h = fmod(hsv.h, 360);
+  if (h < 0) {
+    h += 360;
+  }
+  float s = hsv.s > 1 ? 1 : hsv.s < 0 ? 0 : hsv.s;
+  float v = hsv.v > 1 ? 1 : hsv.v < 0 ? 0 : hsv.v;
 
-static constexpr uint16_t gain_values[] = {
-    256, // 256 * 1
-    141, // 256 * 0.55
-    179, // 256 * 0.7
-};
+  float c = v * s;
+  float x = c * (1 - std::fabs(fmod(h / 60.0f, 2.0f) - 1));
+  float m = v - c;
 
-static constexpr int COLOR_COUNT = sizeof(colors) / sizeof(colors[0]);
+  uint8_t t = (c + m) * 255;
+  uint8_t q = (x + m) * 255;
+  uint8_t p = m * 255;
 
-uint8_t get_rgb_component(const RGB &color, int channel) {
-  switch (channel) {
+  int sector = (int)(h / 60.0f);
+
+  switch (sector) {
   case 0:
-    return color.r;
+    return {t, q, p};
   case 1:
-    return color.g;
+    return {q, t, p};
   case 2:
-    return color.b;
+    return {p, t, q};
+  case 3:
+    return {p, q, t};
+  case 4:
+    return {q, p, t};
+  case 5:
+    return {t, p, q};
   default:
-    return 0;
+    return {0, 0, 0};
+  }
+}
+
+void initialize_gamma_table(RgbLed &rgb_led) {
+  for (int i = 0; i < 256; i++) {
+    rgb_led.gamma_table[i] = (uint8_t)(powf(i / 255.0f, 2.2) * 255.0f);
   }
 }
 
@@ -76,16 +92,16 @@ static constexpr uint32_t duty_max_for(ledc_timer_bit_t res) {
   }
 }
 
-uint32_t get_color_duty(uint8_t color) {
-  return color * duty_max_for(LEDC_RESOLUTION) / 255;
+uint32_t get_color_duty(uint8_t color, ledc_timer_bit_t resolution) {
+  return (uint32_t)color * duty_max_for(resolution) / 255;
 }
 
-void configure_ledc_timer() {
+void configure_ledc_timer(const RgbLed &rgb_led) {
   ledc_timer_config_t timer_conf = {};
-  timer_conf.speed_mode = LEDC_MODE;
-  timer_conf.timer_num = LEDC_TIMER;
-  timer_conf.duty_resolution = LEDC_RESOLUTION;
-  timer_conf.freq_hz = LEDC_FREQUENCY;
+  timer_conf.speed_mode = rgb_led.mode;
+  timer_conf.timer_num = rgb_led.timer;
+  timer_conf.duty_resolution = rgb_led.resolution;
+  timer_conf.freq_hz = rgb_led.frequency;
   timer_conf.clk_cfg = LEDC_USE_APB_CLK;
 
   esp_err_t err = ledc_timer_config(&timer_conf);
@@ -93,63 +109,100 @@ void configure_ledc_timer() {
     ESP_LOGE(TAG, "Failed to configure LEDC timer: %d", err);
   } else {
     ESP_LOGI(TAG, "LEDC timer configured: %u Hz, %d-bit",
-             (unsigned)LEDC_FREQUENCY, (int)LEDC_RESOLUTION);
+             (unsigned)rgb_led.frequency, (int)rgb_led.resolution);
   }
 }
 
-void configure_ledc_channel(ledc_channel_t channel, gpio_num_t gpio) {
-  ledc_channel_config_t ch_conf = {};
-  ch_conf.speed_mode = LEDC_MODE;
-  ch_conf.channel = channel;
-  ch_conf.timer_sel = LEDC_TIMER;
-  ch_conf.intr_type = LEDC_INTR_DISABLE;
-  ch_conf.gpio_num = gpio;
-  ch_conf.duty = 0;
-  ch_conf.hpoint = 0;
+void configure_ledc_channels(const RgbLed &rgb_led) {
+  for (int i = 0; i < rgb_led.channel_count; i++) {
+    ledc_channel_config_t ch_conf = {};
+    ch_conf.speed_mode = rgb_led.mode;
+    ch_conf.channel = rgb_led.channels[i];
+    ch_conf.timer_sel = rgb_led.timer;
+    ch_conf.intr_type = LEDC_INTR_DISABLE;
+    ch_conf.gpio_num = rgb_led.gpios[i];
+    ch_conf.duty = 0;
+    ch_conf.hpoint = 0;
 
-  esp_err_t err = ledc_channel_config(&ch_conf);
-  if (err != ESP_OK) {
-    ESP_LOGE(TAG, "Failed to configure LEDC channel: %d", err);
-  } else {
-    ESP_LOGI(TAG, "LEDC channel configured on GPIO %d", (int)gpio);
+    esp_err_t err = ledc_channel_config(&ch_conf);
+    if (err != ESP_OK) {
+      ESP_LOGE(TAG, "Failed to configure LEDC channel: %d", err);
+    } else {
+      ESP_LOGI(TAG, "LEDC channel configured on GPIO %d",
+               (int)rgb_led.gpios[i]);
+    };
   }
 }
 
-void apply_color(const RGB &color) {
-  for (int i = 0; i < LED_COUNT; i++) {
-    const uint8_t color_value = get_rgb_component(color, i);
-    uint16_t scaled_value = ((uint32_t)color_value * gain_values[i]) >> 8;
+uint8_t get_color_value(const Rgb &rgb_color, int channel_index) {
+  switch (channel_index) {
+  case 0:
+    return rgb_color.r;
+  case 1:
+    return rgb_color.g;
+  case 2:
+    return rgb_color.b;
+  }
+  return 0;
+}
+
+void apply_color(const Rgb &rgb_color, const RgbLed &rgb_led) {
+  for (int i = 0; i < rgb_led.channel_count; i++) {
+    const uint8_t color_value = get_color_value(rgb_color, i);
+    uint16_t scaled_value =
+        ((uint32_t)color_value * rgb_led.gain_values[i]) >> 8;
     if (scaled_value > 255) {
       scaled_value = 255;
     }
-    const uint32_t duty_value = get_color_duty(scaled_value);
-    esp_err_t err = ledc_set_duty(LEDC_MODE, LEDC_CHANNELS[i], duty_value);
+    uint8_t corrected_value = rgb_led.gamma_table[scaled_value];
+    const uint32_t duty_value =
+        get_color_duty(corrected_value, rgb_led.resolution);
+    esp_err_t err =
+        ledc_set_duty(rgb_led.mode, rgb_led.channels[i], duty_value);
     if (err != ESP_OK) {
       ESP_LOGE(TAG, "ledc_set_duty failed: %d for channel %d", err,
-               LEDC_CHANNELS[i]);
+               rgb_led.channels[i]);
     }
+  }
+  for (int i = 0; i < rgb_led.channel_count; i++) {
+    ledc_update_duty(rgb_led.mode, rgb_led.channels[i]);
   }
 }
 
 void handle_rgb(void *pvParameter) {
+  static long start_time = xTaskGetTickCount();
+  RgbLed *led_ptr = (RgbLed *)pvParameter;
+  // Get the pointer to the RgbLed struct (mandatory for
+  // freeRTOS tasks to pass pointers as parameters)
+  RgbLed &rgb_led = *led_ptr;
+  // Dereference the pointer to get the reference to the
+  // RgbLed struct, rgb_led is now a reference and can
+  // safely be passed to other functions
   while (1) {
-    for (int index = 0; index < COLOR_COUNT; index++) {
-      const RGB &current_color =
-          colors[index]; // Using '&' creates a reference rather than a copy
-                         // (ie. same as getting a property from an object in
-                         // JS) This is useful for performance (avoiding
-                         // copying the object) and it's especially good for
-                         // firmware to clarify what memory we're using
-      apply_color(current_color);
-      vTaskDelay(pdMS_TO_TICKS(1000));
-    }
+    long current_time = xTaskGetTickCount();
+    long elapsed_time = pdTICKS_TO_MS(current_time - start_time);
+    float hue = (float)(elapsed_time % period) * 360.0f / (float)period;
+    Hsv hsv = {hue, 1, 0.3};
+    Rgb rgb = hsv_to_rgb(hsv);
+    apply_color(rgb, rgb_led);
+    vTaskDelay(pdMS_TO_TICKS(10));
   }
 }
 
 extern "C" void app_main(void) {
-  configure_ledc_timer();
-  for (int i = 0; i < LED_COUNT; i++) {
-    configure_ledc_channel(LEDC_CHANNELS[i], LED_GPIOS[i]);
-  }
-  xTaskCreate(handle_rgb, "handle_rgb", 10000, NULL, 5, NULL);
+
+  static RgbLed rgb_led = {
+      .mode = LEDC_LOW_SPEED_MODE,
+      .timer = LEDC_TIMER_0,
+      .resolution = LEDC_TIMER_10_BIT,
+      .frequency = 1000,
+      .channels = {LEDC_CHANNEL_0, LEDC_CHANNEL_1, LEDC_CHANNEL_2},
+      .gpios = {GPIO_NUM_5, GPIO_NUM_4, GPIO_NUM_2},
+      .gain_values = {256, 141, 179},
+  };
+
+  configure_ledc_timer(rgb_led);
+  configure_ledc_channels(rgb_led);
+  initialize_gamma_table(rgb_led);
+  xTaskCreate(handle_rgb, "handle_rgb", 10000, &rgb_led, 5, NULL);
 }

@@ -660,7 +660,7 @@
 13261	13326	1766389852852144497	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/mps_trace.c.obj	b1d69eb22e2ce432
 13260	13328	1766389852850767295	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/mps_reader.c.obj	c788f99ac73992d8
 13048	13333	1766389852638785919	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_api.c.obj	7e3afd5dd95a6e1d
-30	183	1768890432465451286	esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj	3cf840a7d009ad90
+32	252	1769208446279251360	esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj	c20facd29b445c89
 13273	13376	1766389852864110873	esp-idf/spi_flash/libspi_flash.a	6257a2ba4128c918
 13092	13416	1766389852682331112	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/efuse_controller/keys/with_key_purposes/esp_efuse_api_key.c.obj	4d5f827a622bd8
 13376	13431	1766389852967206620	esp-idf/esp_mm/libesp_mm.a	e903e6cdd0938337
@@ -689,7 +689,7 @@
 13803	13849	1766389853394171726	esp-idf/esp_bootloader_format/libesp_bootloader_format.a	ddfee82debc2f305
 13523	13854	1766389853113919308	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/Users/talemile/esp/v5.5.1/esp-idf/components/mbedtls/port/net_sockets.c.obj	1d1733ad6f4f52d5
 13540	13866	1766389853130800554	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/pkcs7.c.obj	8e92c2479e446f6e
-184	226	1768890432618980933	esp-idf/esp_app_format/libesp_app_format.a	f203dbbe74ad0e9d
+252	317	1769208446499736643	esp-idf/esp_app_format/libesp_app_format.a	f203dbbe74ad0e9d
 13854	13931	1766389853444443519	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/aesni.c.obj	ba87e7c29912872a
 13866	13938	1766389853457143411	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/aesce.c.obj	6282b076b395c0cb
 13690	13950	1766389853280881125	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_csr.c.obj	5140cc85e4034473
@@ -988,504 +988,9 @@
 19301	19347	1766389858891327801	esp-idf/wifi_provisioning/libwifi_provisioning.a	53d075cb626c6dbd
 18443	19347	1766389858033999082	esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt_client.c.obj	1934f942cba2a869
 19347	19378	1766389858937955763	esp-idf/mqtt/libmqtt.a	2a03f77de1b83550
-199	224	1768893452551112518	esp-idf/main/libmain.a	f67b3e64ded64ce4
+208	233	1769209456210608432	esp-idf/main/libmain.a	f67b3e64ded64ce4
 15725	19912	1766389859502453210	bootloader-prefix/src/bootloader-stamp/bootloader-configure	a75ac37039e90843
 15725	19912	1766389859502453210	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure	a75ac37039e90843
-23	68	1768893459070037803	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
-23	68	1768893459070037803	bootloader/bootloader.elf	b7d884e05a7c7007
-23	68	1768893459070037803	bootloader/bootloader.bin	b7d884e05a7c7007
-23	68	1768893459070037803	bootloader/bootloader.map	b7d884e05a7c7007
-23	68	1768893459070037803	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
-23	68	1768893459070037803	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
-23	68	1768893459070037803	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
-23	68	1768893459070037803	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
-68	75	1768893459115105731	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
-68	75	1768893459115105731	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
-75	91	1768893459137549000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
-75	91	1768893459137549000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
-75	91	1768893459137549000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
-75	91	1768893459137549000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
-224	3642	1768893455980187955	esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
-224	3642	1768893455980187955	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
-23909	23935	1766389863498939860	CMakeFiles/breath.elf.dir/project_elf_src_esp32c3.c.obj	7a54a17911c61331
-3718	3958	1768888141745826428	breath.elf	8ec751f7209e4683
-3910	3991	1768893456342993014	.bin_timestamp	fed0cec860d8205c
-3910	3991	1768893456342993014	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/.bin_timestamp	fed0cec860d8205c
-23	52	1768893459070349722	esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
-23	52	1768893459070349722	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
-91	2773	1768893459137921696	CMakeFiles/flash	30b24541557024e4
-91	2773	1768893459137921696	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/flash	30b24541557024e4
-18	2980	1769208446197641327	build.ninja	baa14cbbc0723f05
-18	2980	1769208445836811954	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445837429415	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445840071552	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/riscv/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445842288062	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_gpio/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445844264654	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_pm/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445846920708	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445847435544	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445847842254	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/include/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445848358798	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/3rdparty/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445850420182	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/3rdparty/everest/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445852548150	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/3rdparty/p256-m/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445880065357	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/library/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445881277029	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/pkgconfig/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445883597915	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/bootloader/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445884253709	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445885572840	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/partition_table/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445888068726	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_app_format/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445890834864	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_bootloader_format/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445893434584	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/app_update/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445896001679	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_partition/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445906776977	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/efuse/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445911318206	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/bootloader_support/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445914363803	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_mm/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445918272320	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/spi_flash/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445923654053	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445924095055	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/port/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445924354973	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/port/soc/esp32c3/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445927644571	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_common/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445931144545	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_rom/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445937248239	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/hal/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445941038673	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/log/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445943913352	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/heap/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445947623661	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/soc/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445952423057	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_security/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445962764021	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_hw_support/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445963080605	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_hw_support/port/esp32c3/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445963362481	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_hw_support/lowpower/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445967114915	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/freertos/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445970932974	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/newlib/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445971269267	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/newlib/src/port/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445974176780	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/pthread/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445976904417	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/cxx/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445979681472	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_timer/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445982467942	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_gptimer/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445984912037	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_ringbuf/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445987576715	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_uart/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445990779771	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/app_trace/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445993097699	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_event/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208445997474468	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/nvs_flash/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446000192605	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_phy/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446002429949	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_usb_serial_jtag/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446004340957	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_vfs_console/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446006995844	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/vfs/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446016180344	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/lwip/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446016533262	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_netif_stack/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446019471984	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_netif/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446033264754	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/wpa_supplicant/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446037049605	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_coex/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446043300133	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_wifi/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446046156187	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_spi/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446048998991	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_gdbstub/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446050171705	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/bt/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446053211677	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/unity/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446058826077	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/cmock/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446066596154	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/console/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446070294379	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_pcnt/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446070623964	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_mcpwm/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446070898840	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_ana_cmpr/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446073812978	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_i2s/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446080204132	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/sdmmc/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446080570342	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_sdmmc/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446083054020	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_sdspi/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446083408105	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_sdio/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446083706648	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_dac/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446084005941	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_bitscrambler/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446087288497	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_rmt/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446090321094	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_tsens/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446092305686	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_sdm/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446094555655	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_i2c/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446096586955	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_ledc/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446096856415	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_parlio/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446098852966	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_twai/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446103175818	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/driver/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446105108994	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/http_parser/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446107556422	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp-tls/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446110686436	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_adc/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446110957520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_isp/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446113052071	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_cam/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446115478957	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_psram/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446115743958	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_jpeg/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446116020543	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_ppa/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446116299586	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_touch_sens/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446118651430	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_eth/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446120888273	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_hid/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446123318617	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/tcp_transport/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446132494909	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_http_client/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446134961003	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_http_server/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446140651654	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_https_ota/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446142563496	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_https_server/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446145510259	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_lcd/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446147452309	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/protobuf-c/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446151054075	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/protocomm/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446154131131	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_local_ctrl/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446157055727	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/espcoredump/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446159799948	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/wear_levelling/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446162753795	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/fatfs/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446163039754	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/idf_test/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446163308547	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/ieee802154/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446165481640	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/json/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446167959693	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mqtt/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446170160411	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/nvs_sec_provider/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446170454246	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/openthread/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446172538630	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/rt/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446175221434	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/spiffs/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446175537311	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/ulp/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446175826020	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/usb/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446179369244	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/wifi_provisioning/cmake_install.cmake	baa14cbbc0723f05
-18	2980	1769208446184581685	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/main/cmake_install.cmake	baa14cbbc0723f05
-26	199	1768893452378135933	esp-idf/main/CMakeFiles/__idf_main.dir/__/rgbLED/rgbLED.cpp.obj	2aba477fe76725f7
-3817	3841	1768890436252860266	CMakeFiles/rgbLED.elf.dir/project_elf_src_esp32c3.c.obj	cbdd196490fa4f2d
-3642	3910	1768893455994504121	rgbLED.elf	a308541387af4813
-51	3232	1769208446197641327	build.ninja	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/riscv/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_gpio/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_pm/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/include/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/3rdparty/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/3rdparty/everest/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/3rdparty/p256-m/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/library/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/pkgconfig/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/bootloader/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/partition_table/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_app_format/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_bootloader_format/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/app_update/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_partition/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/efuse/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/bootloader_support/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_mm/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/spi_flash/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/port/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/port/soc/esp32c3/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_common/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_rom/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/hal/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/log/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/heap/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/soc/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_security/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_hw_support/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_hw_support/port/esp32c3/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_hw_support/lowpower/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/freertos/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/newlib/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/newlib/src/port/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/pthread/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/cxx/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_timer/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_gptimer/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_ringbuf/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_uart/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/app_trace/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_event/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/nvs_flash/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_phy/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_usb_serial_jtag/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_vfs_console/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/vfs/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/lwip/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_netif_stack/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_netif/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/wpa_supplicant/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_coex/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_wifi/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_spi/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_gdbstub/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/bt/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/unity/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/cmock/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/console/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_pcnt/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_mcpwm/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_ana_cmpr/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_i2s/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/sdmmc/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_sdmmc/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_sdspi/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_sdio/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_dac/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_bitscrambler/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_rmt/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_tsens/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_sdm/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_i2c/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_ledc/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_parlio/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_twai/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/driver/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/http_parser/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp-tls/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_adc/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_isp/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_cam/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_psram/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_jpeg/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_ppa/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_touch_sens/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_eth/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_hid/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/tcp_transport/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_http_client/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_http_server/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_https_ota/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_https_server/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_lcd/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/protobuf-c/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/protocomm/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_local_ctrl/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/espcoredump/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/wear_levelling/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/fatfs/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/idf_test/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/ieee802154/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/json/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mqtt/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/nvs_sec_provider/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/openthread/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/rt/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/spiffs/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/ulp/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/usb/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/wifi_provisioning/cmake_install.cmake	baa14cbbc0723f05
-51	3232	1769208446197641327	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/main/cmake_install.cmake	baa14cbbc0723f05
-32	91	1769208446279546987	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
-32	91	1769208446279546987	bootloader/bootloader.elf	b7d884e05a7c7007
-32	91	1769208446279546987	bootloader/bootloader.bin	b7d884e05a7c7007
-32	91	1769208446279546987	bootloader/bootloader.map	b7d884e05a7c7007
-32	91	1769208446279546987	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
-32	91	1769208446279546987	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
-32	91	1769208446279546987	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
-32	91	1769208446279546987	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
-92	112	1769208446339081129	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
-92	112	1769208446339081129	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
-112	134	1769208446381479000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
-112	134	1769208446381479000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
-112	134	1769208446381479000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
-112	134	1769208446381479000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
-32	252	1769208446279251360	esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj	c20facd29b445c89
-252	317	1769208446499736643	esp-idf/esp_app_format/libesp_app_format.a	f203dbbe74ad0e9d
-25	74	1769208571795227610	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
-25	74	1769208571795227610	bootloader/bootloader.elf	b7d884e05a7c7007
-25	74	1769208571795227610	bootloader/bootloader.bin	b7d884e05a7c7007
-25	74	1769208571795227610	bootloader/bootloader.map	b7d884e05a7c7007
-25	74	1769208571795227610	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
-25	74	1769208571795227610	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
-25	74	1769208571795227610	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
-25	74	1769208571795227610	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
-74	81	1769208571844055497	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
-74	81	1769208571844055497	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
-81	99	1769208571868298000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
-81	99	1769208571868298000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
-81	99	1769208571868298000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
-81	99	1769208571868298000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
-28	77	1769208701959021092	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
-28	77	1769208701959021092	bootloader/bootloader.elf	b7d884e05a7c7007
-28	77	1769208701959021092	bootloader/bootloader.bin	b7d884e05a7c7007
-28	77	1769208701959021092	bootloader/bootloader.map	b7d884e05a7c7007
-28	77	1769208701959021092	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
-28	77	1769208701959021092	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
-28	77	1769208701959021092	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
-28	77	1769208701959021092	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
-77	84	1769208702007839062	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
-77	84	1769208702007839062	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
-84	103	1769208702033050000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
-84	103	1769208702033050000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
-84	103	1769208702033050000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
-84	103	1769208702033050000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
-28	243	1769208701958712382	esp-idf/main/CMakeFiles/__idf_main.dir/__/rgbLED/rgbLED.cpp.obj	2aba477fe76725f7
-243	269	1769208702173825891	esp-idf/main/libmain.a	f67b3e64ded64ce4
-269	3731	1769208705645358959	esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
-269	3731	1769208705645358959	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
-3731	4027	1769208705662071576	rgbLED.elf	a308541387af4813
-4027	4113	1769208706043216915	.bin_timestamp	fed0cec860d8205c
-4027	4113	1769208706043216915	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/.bin_timestamp	fed0cec860d8205c
-4113	4140	1769208706043557541	esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
-4113	4140	1769208706043557541	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
-27	59	1769208711090133858	esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
-27	59	1769208711090133858	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
-27	77	1769208711089787357	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
-27	77	1769208711089787357	bootloader/bootloader.elf	b7d884e05a7c7007
-27	77	1769208711089787357	bootloader/bootloader.bin	b7d884e05a7c7007
-27	77	1769208711089787357	bootloader/bootloader.map	b7d884e05a7c7007
-27	77	1769208711089787357	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
-27	77	1769208711089787357	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
-27	77	1769208711089787357	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
-27	77	1769208711089787357	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
-77	84	1769208711139345496	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
-77	84	1769208711139345496	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
-84	100	1769208711162570000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
-84	100	1769208711162570000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
-84	100	1769208711162570000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
-84	100	1769208711162570000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
-100	2787	1769208711162946352	CMakeFiles/flash	30b24541557024e4
-100	2787	1769208711162946352	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/flash	30b24541557024e4
-48	95	1769208761900840867	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
-48	95	1769208761900840867	bootloader/bootloader.elf	b7d884e05a7c7007
-48	95	1769208761900840867	bootloader/bootloader.bin	b7d884e05a7c7007
-48	95	1769208761900840867	bootloader/bootloader.map	b7d884e05a7c7007
-48	95	1769208761900840867	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
-48	95	1769208761900840867	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
-48	95	1769208761900840867	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
-48	95	1769208761900840867	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
-95	103	1769208761948071246	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
-95	103	1769208761948071246	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
-103	120	1769208761972376000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
-103	120	1769208761972376000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
-103	120	1769208761972376000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
-103	120	1769208761972376000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
-48	220	1769208761900459365	esp-idf/main/CMakeFiles/__idf_main.dir/__/rgbLED/rgbLED.cpp.obj	2aba477fe76725f7
-220	246	1769208762073256434	esp-idf/main/libmain.a	f67b3e64ded64ce4
-246	3397	1769208765234207022	esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
-246	3397	1769208765234207022	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
-3397	3645	1769208765250376386	rgbLED.elf	a308541387af4813
-3645	3728	1769208765580798872	.bin_timestamp	fed0cec860d8205c
-3645	3728	1769208765580798872	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/.bin_timestamp	fed0cec860d8205c
-3728	3759	1769208765581193166	esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
-3728	3759	1769208765581193166	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
-3759	6463	1769208765611671928	CMakeFiles/flash	30b24541557024e4
-3759	6463	1769208765611671928	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/flash	30b24541557024e4
-26	53	1769208771710564518	esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
-26	53	1769208771710564518	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
-25	68	1769208771710243183	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
-25	68	1769208771710243183	bootloader/bootloader.elf	b7d884e05a7c7007
-25	68	1769208771710243183	bootloader/bootloader.bin	b7d884e05a7c7007
-25	68	1769208771710243183	bootloader/bootloader.map	b7d884e05a7c7007
-25	68	1769208771710243183	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
-25	68	1769208771710243183	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
-25	68	1769208771710243183	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
-25	68	1769208771710243183	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
-68	75	1769208771752918458	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
-68	75	1769208771752918458	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
-75	96	1769208771779961000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
-75	96	1769208771779961000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
-75	96	1769208771779961000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
-75	96	1769208771779961000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
-24	52	1769208778409015637	esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
-24	52	1769208778409015637	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
-24	65	1769208778408661052	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
-24	65	1769208778408661052	bootloader/bootloader.elf	b7d884e05a7c7007
-24	65	1769208778408661052	bootloader/bootloader.bin	b7d884e05a7c7007
-24	65	1769208778408661052	bootloader/bootloader.map	b7d884e05a7c7007
-24	65	1769208778408661052	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
-24	65	1769208778408661052	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
-24	65	1769208778408661052	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
-24	65	1769208778408661052	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
-65	72	1769208778449980654	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
-65	72	1769208778449980654	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
-72	89	1769208778473432000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
-72	89	1769208778473432000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
-72	89	1769208778473432000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
-72	89	1769208778473432000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
-89	2765	1769208778473840137	CMakeFiles/flash	30b24541557024e4
-89	2765	1769208778473840137	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/flash	30b24541557024e4
-26	76	1769209040739343376	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
-26	76	1769209040739343376	bootloader/bootloader.elf	b7d884e05a7c7007
-26	76	1769209040739343376	bootloader/bootloader.bin	b7d884e05a7c7007
-26	76	1769209040739343376	bootloader/bootloader.map	b7d884e05a7c7007
-26	76	1769209040739343376	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
-26	76	1769209040739343376	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
-26	76	1769209040739343376	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
-26	76	1769209040739343376	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
-76	83	1769209040789540390	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
-76	83	1769209040789540390	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
-83	100	1769209040813457000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
-83	100	1769209040813457000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
-83	100	1769209040813457000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
-83	100	1769209040813457000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
-25	199	1769209040739020918	esp-idf/main/CMakeFiles/__idf_main.dir/__/rgbLED/rgbLED.cpp.obj	2aba477fe76725f7
-199	225	1769209040912893361	esp-idf/main/libmain.a	f67b3e64ded64ce4
-225	3504	1769209044203281879	esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
-225	3504	1769209044203281879	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
-3504	3782	1769209044217860607	rgbLED.elf	a308541387af4813
-3782	3868	1769209044581391644	.bin_timestamp	fed0cec860d8205c
-3782	3868	1769209044581391644	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/.bin_timestamp	fed0cec860d8205c
-3868	3896	1769209044581772769	esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
-3868	3896	1769209044581772769	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
-3896	6743	1769209044609687766	CMakeFiles/flash	30b24541557024e4
-3896	6743	1769209044609687766	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/flash	30b24541557024e4
-25	81	1769209130413353967	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
-25	81	1769209130413353967	bootloader/bootloader.elf	b7d884e05a7c7007
-25	81	1769209130413353967	bootloader/bootloader.bin	b7d884e05a7c7007
-25	81	1769209130413353967	bootloader/bootloader.map	b7d884e05a7c7007
-25	81	1769209130413353967	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
-25	81	1769209130413353967	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
-25	81	1769209130413353967	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
-25	81	1769209130413353967	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
-81	89	1769209130469978099	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
-81	89	1769209130469978099	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
-89	111	1769209130499546000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
-89	111	1769209130499546000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
-89	111	1769209130499546000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
-89	111	1769209130499546000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
-24	216	1769209130413038425	esp-idf/main/CMakeFiles/__idf_main.dir/__/rgbLED/rgbLED.cpp.obj	2aba477fe76725f7
-216	242	1769209130604789747	esp-idf/main/libmain.a	f67b3e64ded64ce4
-242	3739	1769209134113578765	esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
-242	3739	1769209134113578765	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
-3739	3983	1769209134127958507	rgbLED.elf	a308541387af4813
-3983	4069	1769209134457726193	.bin_timestamp	fed0cec860d8205c
-3983	4069	1769209134457726193	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/.bin_timestamp	fed0cec860d8205c
-4069	4097	1769209134458069485	esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
-4069	4097	1769209134458069485	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
-4097	6809	1769209134485419549	CMakeFiles/flash	30b24541557024e4
-4097	6809	1769209134485419549	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/flash	30b24541557024e4
-26	74	1769209194268733198	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
-26	74	1769209194268733198	bootloader/bootloader.elf	b7d884e05a7c7007
-26	74	1769209194268733198	bootloader/bootloader.bin	b7d884e05a7c7007
-26	74	1769209194268733198	bootloader/bootloader.map	b7d884e05a7c7007
-26	74	1769209194268733198	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
-26	74	1769209194268733198	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
-26	74	1769209194268733198	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
-26	74	1769209194268733198	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
-74	81	1769209194316756185	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
-74	81	1769209194316756185	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
-81	98	1769209194340093000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
-81	98	1769209194340093000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
-81	98	1769209194340093000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
-81	98	1769209194340093000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
-25	213	1769209194268242114	esp-idf/main/CMakeFiles/__idf_main.dir/__/rgbLED/rgbLED.cpp.obj	2aba477fe76725f7
-214	243	1769209194456483470	esp-idf/main/libmain.a	f67b3e64ded64ce4
-243	3888	1769209198114518307	esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
-243	3888	1769209198114518307	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
-3888	4148	1769209198131121929	rgbLED.elf	a308541387af4813
-4148	4235	1769209198477842031	.bin_timestamp	fed0cec860d8205c
-4148	4235	1769209198477842031	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/.bin_timestamp	fed0cec860d8205c
-4235	4263	1769209198478198740	esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
-4235	4263	1769209198478198740	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
-4263	6959	1769209198505849680	CMakeFiles/flash	30b24541557024e4
-4263	6959	1769209198505849680	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/flash	30b24541557024e4
-25	70	1769209309033947184	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
-25	70	1769209309033947184	bootloader/bootloader.elf	b7d884e05a7c7007
-25	70	1769209309033947184	bootloader/bootloader.bin	b7d884e05a7c7007
-25	70	1769209309033947184	bootloader/bootloader.map	b7d884e05a7c7007
-25	70	1769209309033947184	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
-25	70	1769209309033947184	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
-25	70	1769209309033947184	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
-25	70	1769209309033947184	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
-70	77	1769209309079091415	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
-70	77	1769209309079091415	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
-77	94	1769209309103202000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
-77	94	1769209309103202000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
-77	94	1769209309103202000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
-77	94	1769209309103202000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
-24	187	1769209309033622683	esp-idf/main/CMakeFiles/__idf_main.dir/__/rgbLED/rgbLED.cpp.obj	2aba477fe76725f7
-187	213	1769209309196265688	esp-idf/main/libmain.a	f67b3e64ded64ce4
-213	3490	1769209312480088193	esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
-213	3490	1769209312480088193	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
-3491	3746	1769209312499839615	rgbLED.elf	a308541387af4813
-3746	3828	1769209312837259111	.bin_timestamp	fed0cec860d8205c
-3746	3828	1769209312837259111	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/.bin_timestamp	fed0cec860d8205c
-3828	3856	1769209312837586570	esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
-3828	3856	1769209312837586570	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
-3856	6703	1769209312865170593	CMakeFiles/flash	30b24541557024e4
-3856	6703	1769209312865170593	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/flash	30b24541557024e4
 39	87	1769209456041412328	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
 39	87	1769209456041412328	bootloader/bootloader.elf	b7d884e05a7c7007
 39	87	1769209456041412328	bootloader/bootloader.bin	b7d884e05a7c7007
@@ -1500,14 +1005,638 @@
 95	113	1769209456115131000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
 95	113	1769209456115131000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
 95	113	1769209456115131000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
-38	208	1769209456041054161	esp-idf/main/CMakeFiles/__idf_main.dir/__/rgbLED/rgbLED.cpp.obj	2aba477fe76725f7
-208	233	1769209456210608432	esp-idf/main/libmain.a	f67b3e64ded64ce4
 233	3465	1769209459454055009	esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
 233	3465	1769209459454055009	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
-3465	3736	1769209459468049667	rgbLED.elf	a308541387af4813
+23909	23935	1766389863498939860	CMakeFiles/breath.elf.dir/project_elf_src_esp32c3.c.obj	7a54a17911c61331
+3718	3958	1768888141745826428	breath.elf	8ec751f7209e4683
 3736	3823	1769209459825479544	.bin_timestamp	fed0cec860d8205c
 3736	3823	1769209459825479544	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/.bin_timestamp	fed0cec860d8205c
 3823	3854	1769209459825821044	esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
 3823	3854	1769209459825821044	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
 3854	6569	1769209459856827575	CMakeFiles/flash	30b24541557024e4
 3854	6569	1769209459856827575	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/flash	30b24541557024e4
+51	3232	1769278099625746520	build.ninja	baa14cbbc0723f05
+51	3232	1769278099355289275	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099355937865	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099358587892	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/riscv/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099360902082	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_gpio/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099362895769	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_pm/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099365489087	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099365767298	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099366142511	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/include/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099366520723	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/3rdparty/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099368531493	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/3rdparty/everest/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099370474388	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/3rdparty/p256-m/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099388155901	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/library/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099388945409	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/pkgconfig/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099390253672	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/bootloader/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099390790594	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099391570518	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/partition_table/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099393576122	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_app_format/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099395497808	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_bootloader_format/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099397518370	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/app_update/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099399890145	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_partition/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099402586089	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/efuse/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099405807413	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/bootloader_support/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099407997894	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_mm/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099411254218	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/spi_flash/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099415789889	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099416487438	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/port/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099416760149	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/port/soc/esp32c3/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099420451437	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_common/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099422865419	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_rom/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099427623509	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/hal/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099430376121	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/log/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099432772520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/heap/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099435992303	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/soc/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099438194700	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_security/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099443955967	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_hw_support/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099444237470	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_hw_support/port/esp32c3/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099444501681	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_hw_support/lowpower/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099450064445	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/freertos/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099453304603	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/newlib/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099453554231	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/newlib/src/port/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099455752795	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/pthread/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099457782649	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/cxx/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099460162923	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_timer/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099463168620	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_gptimer/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099464989013	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_ringbuf/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099467020117	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_uart/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099469088680	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/app_trace/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099471102701	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_event/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099474648278	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/nvs_flash/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099477063219	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_phy/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099479001156	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_usb_serial_jtag/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099480771715	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_vfs_console/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099482852611	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/vfs/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099490458647	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/lwip/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099490724400	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_netif_stack/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099493249550	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_netif/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099501827137	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/wpa_supplicant/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099503807157	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_coex/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099506752020	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_wifi/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099509037460	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_spi/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099511119107	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_gdbstub/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099511463318	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/bt/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099513930052	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/unity/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099516665996	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/cmock/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099520605869	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/console/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099520866497	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_pcnt/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099521121458	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_mcpwm/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099521472878	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_ana_cmpr/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099523853361	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_i2s/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099526339386	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/sdmmc/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099526779765	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_sdmmc/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099528919662	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_sdspi/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099529174748	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_sdio/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099529396167	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_dac/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099529770171	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_bitscrambler/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099532130778	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_rmt/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099533887587	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_tsens/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099535616147	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_sdm/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099537497874	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_i2c/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099539494311	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_ledc/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099539732272	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_parlio/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099542695635	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_twai/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099546561299	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/driver/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099548413485	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/http_parser/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099550659799	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp-tls/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099553636621	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_adc/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099553972083	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_isp/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099555837352	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_cam/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099556071104	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_psram/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099556308940	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_jpeg/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099556535317	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_ppa/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099556770695	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_touch_sens/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099558781340	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_eth/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099561578494	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_hid/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099563797266	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/tcp_transport/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099565923663	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_http_client/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099568381104	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_http_server/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099570219664	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_https_ota/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099572078642	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_https_server/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099575108797	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_lcd/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099576825273	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/protobuf-c/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099579880429	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/protocomm/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099582432330	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_local_ctrl/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099585052190	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/espcoredump/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099587627299	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/wear_levelling/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099590493537	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/fatfs/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099590727997	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/idf_test/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099590959833	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/ieee802154/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099592878103	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/json/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099595095875	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mqtt/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099596872560	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/nvs_sec_provider/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099597124562	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/openthread/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099599079332	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/rt/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099601401981	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/spiffs/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099601623816	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/ulp/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099601849444	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/usb/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099604788057	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/wifi_provisioning/cmake_install.cmake	baa14cbbc0723f05
+51	3232	1769278099609682982	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/main/cmake_install.cmake	baa14cbbc0723f05
+38	208	1769209456041054161	esp-idf/main/CMakeFiles/__idf_main.dir/__/rgbLED/rgbLED.cpp.obj	2aba477fe76725f7
+3817	3841	1768890436252860266	CMakeFiles/rgbLED.elf.dir/project_elf_src_esp32c3.c.obj	cbdd196490fa4f2d
+3465	3736	1769209459468049667	rgbLED.elf	a308541387af4813
+42	2895	1769278099625746520	build.ninja	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/riscv/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_gpio/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_pm/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/include/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/3rdparty/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/3rdparty/everest/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/3rdparty/p256-m/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/library/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mbedtls/mbedtls/pkgconfig/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/bootloader/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/partition_table/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_app_format/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_bootloader_format/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/app_update/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_partition/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/efuse/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/bootloader_support/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_mm/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/spi_flash/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/port/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/port/soc/esp32c3/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_common/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_rom/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/hal/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/log/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/heap/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/soc/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_security/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_hw_support/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_hw_support/port/esp32c3/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_hw_support/lowpower/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/freertos/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/newlib/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/newlib/src/port/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/pthread/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/cxx/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_timer/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_gptimer/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_ringbuf/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_uart/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/app_trace/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_event/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/nvs_flash/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_phy/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_usb_serial_jtag/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_vfs_console/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/vfs/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/lwip/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_netif_stack/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_netif/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/wpa_supplicant/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_coex/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_wifi/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_spi/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_gdbstub/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/bt/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/unity/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/cmock/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/console/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_pcnt/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_mcpwm/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_ana_cmpr/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_i2s/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/sdmmc/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_sdmmc/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_sdspi/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_sdio/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_dac/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_bitscrambler/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_rmt/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_tsens/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_sdm/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_i2c/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_ledc/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_parlio/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_twai/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/driver/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/http_parser/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp-tls/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_adc/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_isp/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_cam/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_psram/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_jpeg/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_ppa/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_driver_touch_sens/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_eth/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_hid/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/tcp_transport/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_http_client/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_http_server/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_https_ota/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_https_server/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_lcd/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/protobuf-c/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/protocomm/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_local_ctrl/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/espcoredump/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/wear_levelling/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/fatfs/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/idf_test/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/ieee802154/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/json/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/mqtt/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/nvs_sec_provider/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/openthread/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/rt/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/spiffs/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/ulp/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/usb/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/wifi_provisioning/cmake_install.cmake	baa14cbbc0723f05
+42	2895	1769278099625746520	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/main/cmake_install.cmake	baa14cbbc0723f05
+33	81	1769278099702989387	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+33	81	1769278099702989387	bootloader/bootloader.elf	b7d884e05a7c7007
+33	81	1769278099702989387	bootloader/bootloader.bin	b7d884e05a7c7007
+33	81	1769278099702989387	bootloader/bootloader.map	b7d884e05a7c7007
+33	81	1769278099702989387	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+33	81	1769278099702989387	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
+33	81	1769278099702989387	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
+33	81	1769278099702989387	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
+81	89	1769278099751144584	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+81	89	1769278099751144584	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+89	106	1769278099775296000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+89	106	1769278099775296000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+89	106	1769278099775296000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+89	106	1769278099775296000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+33	182	1769278099702694592	esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj	19cba2e0e07b73
+182	236	1769278099851600019	esp-idf/esp_app_format/libesp_app_format.a	f203dbbe74ad0e9d
+236	552	1769278099906268532	esp-idf/main/CMakeFiles/__idf_main.dir/__/rgbLED/rgbLED.cpp.obj	2aba477fe76725f7
+552	572	1769278100222467491	esp-idf/main/libmain.a	f67b3e64ded64ce4
+572	3897	1769278103552397235	esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
+572	3897	1769278103552397235	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
+3897	4159	1769278103566684380	rgbLED.elf	a308541387af4813
+4159	4250	1769278103920009673	.bin_timestamp	fed0cec860d8205c
+4159	4250	1769278103920009673	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/.bin_timestamp	fed0cec860d8205c
+4250	4276	1769278103920363510	esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+4250	4276	1769278103920363510	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+4276	6960	1769278103946294939	CMakeFiles/flash	30b24541557024e4
+4276	6960	1769278103946294939	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/flash	30b24541557024e4
+28	78	1769278244766234670	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+28	78	1769278244766234670	bootloader/bootloader.elf	b7d884e05a7c7007
+28	78	1769278244766234670	bootloader/bootloader.bin	b7d884e05a7c7007
+28	78	1769278244766234670	bootloader/bootloader.map	b7d884e05a7c7007
+28	78	1769278244766234670	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+28	78	1769278244766234670	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
+28	78	1769278244766234670	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
+28	78	1769278244766234670	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
+78	86	1769278244816830183	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+78	86	1769278244816830183	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+86	103	1769278244841245000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+86	103	1769278244841245000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+86	103	1769278244841245000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+86	103	1769278244841245000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+27	334	1769278244765754165	esp-idf/main/CMakeFiles/__idf_main.dir/__/rgbLED/rgbLED.cpp.obj	2aba477fe76725f7
+334	364	1769278245072828614	esp-idf/main/libmain.a	f67b3e64ded64ce4
+364	3813	1769278248536881844	esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
+364	3813	1769278248536881844	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
+3813	4069	1769278248551779787	rgbLED.elf	a308541387af4813
+4069	4151	1769278248889665965	.bin_timestamp	fed0cec860d8205c
+4069	4151	1769278248889665965	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/.bin_timestamp	fed0cec860d8205c
+4151	4178	1769278248890006427	esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+4151	4178	1769278248890006427	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+4178	6756	1769278248916815157	CMakeFiles/flash	30b24541557024e4
+4178	6756	1769278248916815157	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/flash	30b24541557024e4
+42	72	1769281979889122621	esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+42	72	1769281979889122621	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+41	87	1769281979888796992	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+41	87	1769281979888796992	bootloader/bootloader.elf	b7d884e05a7c7007
+41	87	1769281979888796992	bootloader/bootloader.bin	b7d884e05a7c7007
+41	87	1769281979888796992	bootloader/bootloader.map	b7d884e05a7c7007
+41	87	1769281979888796992	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+41	87	1769281979888796992	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
+41	87	1769281979888796992	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
+41	87	1769281979888796992	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
+87	95	1769281979934372533	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+87	95	1769281979934372533	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+95	111	1769281979958215000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+95	111	1769281979958215000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+95	111	1769281979958215000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+95	111	1769281979958215000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+24	53	1769281985760907027	esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+24	53	1769281985760907027	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+24	66	1769281985760563615	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+24	66	1769281985760563615	bootloader/bootloader.elf	b7d884e05a7c7007
+24	66	1769281985760563615	bootloader/bootloader.bin	b7d884e05a7c7007
+24	66	1769281985760563615	bootloader/bootloader.map	b7d884e05a7c7007
+24	66	1769281985760563615	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+24	66	1769281985760563615	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
+24	66	1769281985760563615	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
+24	66	1769281985760563615	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
+66	74	1769281985802499969	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+66	74	1769281985802499969	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+74	91	1769281985827232000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+74	91	1769281985827232000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+74	91	1769281985827232000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+74	91	1769281985827232000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+91	2650	1769281985827616042	CMakeFiles/flash	30b24541557024e4
+91	2650	1769281985827616042	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/flash	30b24541557024e4
+28	83	1769282215009786362	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+28	83	1769282215009786362	bootloader/bootloader.elf	b7d884e05a7c7007
+28	83	1769282215009786362	bootloader/bootloader.bin	b7d884e05a7c7007
+28	83	1769282215009786362	bootloader/bootloader.map	b7d884e05a7c7007
+28	83	1769282215009786362	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+28	83	1769282215009786362	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
+28	83	1769282215009786362	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
+28	83	1769282215009786362	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
+83	92	1769282215064850882	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+83	92	1769282215064850882	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+92	113	1769282215094539000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+92	113	1769282215094539000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+92	113	1769282215094539000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+92	113	1769282215094539000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+28	336	1769282215009435783	esp-idf/main/CMakeFiles/__idf_main.dir/__/rgbLED/rgbLED.cpp.obj	2aba477fe76725f7
+336	373	1769282215317896961	esp-idf/main/libmain.a	f67b3e64ded64ce4
+373	3917	1769282218885005642	esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
+373	3917	1769282218885005642	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
+3917	4173	1769282218898962405	rgbLED.elf	a308541387af4813
+4173	4255	1769282219236243970	.bin_timestamp	fed0cec860d8205c
+4173	4255	1769282219236243970	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/.bin_timestamp	fed0cec860d8205c
+4255	4313	1769282219236549883	esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+4255	4313	1769282219236549883	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+4313	6927	1769282219294724026	CMakeFiles/flash	30b24541557024e4
+4313	6927	1769282219294724026	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/flash	30b24541557024e4
+26	92	1769282319610610390	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+26	92	1769282319610610390	bootloader/bootloader.elf	b7d884e05a7c7007
+26	92	1769282319610610390	bootloader/bootloader.bin	b7d884e05a7c7007
+26	92	1769282319610610390	bootloader/bootloader.map	b7d884e05a7c7007
+26	92	1769282319610610390	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+26	92	1769282319610610390	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
+26	92	1769282319610610390	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
+26	92	1769282319610610390	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
+92	100	1769282319676552508	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+92	100	1769282319676552508	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+100	117	1769282319700681000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+100	117	1769282319700681000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+100	117	1769282319700681000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+100	117	1769282319700681000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+26	296	1769282319610298686	esp-idf/main/CMakeFiles/__idf_main.dir/__/rgbLED/rgbLED.cpp.obj	2aba477fe76725f7
+296	322	1769282319879932116	esp-idf/main/libmain.a	f67b3e64ded64ce4
+322	3512	1769282323082601072	esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
+322	3512	1769282323082601072	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
+3512	3757	1769282323096431545	rgbLED.elf	a308541387af4813
+3757	3840	1769282323423609253	.bin_timestamp	fed0cec860d8205c
+3757	3840	1769282323423609253	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/.bin_timestamp	fed0cec860d8205c
+3840	3866	1769282323423930415	esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+3840	3866	1769282323423930415	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+3866	6604	1769282323450338878	CMakeFiles/flash	30b24541557024e4
+3866	6604	1769282323450338878	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/flash	30b24541557024e4
+71	117	1769301515757655471	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+71	117	1769301515757655471	bootloader/bootloader.elf	b7d884e05a7c7007
+71	117	1769301515757655471	bootloader/bootloader.bin	b7d884e05a7c7007
+71	117	1769301515757655471	bootloader/bootloader.map	b7d884e05a7c7007
+71	117	1769301515757655471	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+71	117	1769301515757655471	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
+71	117	1769301515757655471	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
+71	117	1769301515757655471	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
+117	125	1769301515803787868	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+117	125	1769301515803787868	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+125	141	1769301515827358000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+125	141	1769301515827358000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+125	141	1769301515827358000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+125	141	1769301515827358000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+26	71	1769301598045868585	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+26	71	1769301598045868585	bootloader/bootloader.elf	b7d884e05a7c7007
+26	71	1769301598045868585	bootloader/bootloader.bin	b7d884e05a7c7007
+26	71	1769301598045868585	bootloader/bootloader.map	b7d884e05a7c7007
+26	71	1769301598045868585	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+26	71	1769301598045868585	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
+26	71	1769301598045868585	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
+26	71	1769301598045868585	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
+71	78	1769301598090860994	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+71	78	1769301598090860994	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+78	94	1769301598113920000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+78	94	1769301598113920000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+78	94	1769301598113920000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+78	94	1769301598113920000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+26	304	1769301598045552964	esp-idf/main/CMakeFiles/__idf_main.dir/__/rgbLED/rgbLED.cpp.obj	2aba477fe76725f7
+304	355	1769301598324190989	esp-idf/main/libmain.a	f67b3e64ded64ce4
+355	3772	1769301601778126985	esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
+355	3772	1769301601778126985	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
+3772	4042	1769301601792092715	rgbLED.elf	a308541387af4813
+4042	4126	1769301602145757087	.bin_timestamp	fed0cec860d8205c
+4042	4126	1769301602145757087	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/.bin_timestamp	fed0cec860d8205c
+4126	4153	1769301602146112084	esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+4126	4153	1769301602146112084	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+25	53	1769301606438504213	esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+25	53	1769301606438504213	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+24	68	1769301606438176925	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+24	68	1769301606438176925	bootloader/bootloader.elf	b7d884e05a7c7007
+24	68	1769301606438176925	bootloader/bootloader.bin	b7d884e05a7c7007
+24	68	1769301606438176925	bootloader/bootloader.map	b7d884e05a7c7007
+24	68	1769301606438176925	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+24	68	1769301606438176925	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
+24	68	1769301606438176925	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
+24	68	1769301606438176925	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
+68	75	1769301606481291853	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+68	75	1769301606481291853	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+75	92	1769301606504905000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+75	92	1769301606504905000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+75	92	1769301606504905000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+75	92	1769301606504905000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+92	2650	1769301606505368395	CMakeFiles/flash	30b24541557024e4
+92	2650	1769301606505368395	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/flash	30b24541557024e4
+28	76	1769306416690676962	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+28	76	1769306416690676962	bootloader/bootloader.elf	b7d884e05a7c7007
+28	76	1769306416690676962	bootloader/bootloader.bin	b7d884e05a7c7007
+28	76	1769306416690676962	bootloader/bootloader.map	b7d884e05a7c7007
+28	76	1769306416690676962	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+28	76	1769306416690676962	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
+28	76	1769306416690676962	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
+28	76	1769306416690676962	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
+76	83	1769306416738431521	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+76	83	1769306416738431521	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+83	100	1769306416761794000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+83	100	1769306416761794000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+83	100	1769306416761794000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+83	100	1769306416761794000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+25	72	1769306501989296432	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+25	72	1769306501989296432	bootloader/bootloader.elf	b7d884e05a7c7007
+25	72	1769306501989296432	bootloader/bootloader.bin	b7d884e05a7c7007
+25	72	1769306501989296432	bootloader/bootloader.map	b7d884e05a7c7007
+25	72	1769306501989296432	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+25	72	1769306501989296432	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
+25	72	1769306501989296432	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
+25	72	1769306501989296432	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
+72	80	1769306502036380819	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+72	80	1769306502036380819	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+80	98	1769306502061778000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+80	98	1769306502061778000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+80	98	1769306502061778000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+80	98	1769306502061778000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+25	74	1769306740359898403	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+25	74	1769306740359898403	bootloader/bootloader.elf	b7d884e05a7c7007
+25	74	1769306740359898403	bootloader/bootloader.bin	b7d884e05a7c7007
+25	74	1769306740359898403	bootloader/bootloader.map	b7d884e05a7c7007
+25	74	1769306740359898403	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+25	74	1769306740359898403	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
+25	74	1769306740359898403	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
+25	74	1769306740359898403	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
+74	82	1769306740409566854	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+74	82	1769306740409566854	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+82	99	1769306740433489000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+82	99	1769306740433489000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+82	99	1769306740433489000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+82	99	1769306740433489000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+26	79	1769307068598977004	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+26	79	1769307068598977004	bootloader/bootloader.elf	b7d884e05a7c7007
+26	79	1769307068598977004	bootloader/bootloader.bin	b7d884e05a7c7007
+26	79	1769307068598977004	bootloader/bootloader.map	b7d884e05a7c7007
+26	79	1769307068598977004	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+26	79	1769307068598977004	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
+26	79	1769307068598977004	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
+26	79	1769307068598977004	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
+80	87	1769307068652892145	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+80	87	1769307068652892145	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+87	104	1769307068676828000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+87	104	1769307068676828000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+87	104	1769307068676828000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+87	104	1769307068676828000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+27	76	1769307150323282889	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+27	76	1769307150323282889	bootloader/bootloader.elf	b7d884e05a7c7007
+27	76	1769307150323282889	bootloader/bootloader.bin	b7d884e05a7c7007
+27	76	1769307150323282889	bootloader/bootloader.map	b7d884e05a7c7007
+27	76	1769307150323282889	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+27	76	1769307150323282889	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
+27	76	1769307150323282889	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
+27	76	1769307150323282889	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
+76	83	1769307150372397341	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+76	83	1769307150372397341	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+83	107	1769307150402830000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+83	107	1769307150402830000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+83	107	1769307150402830000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+83	107	1769307150402830000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+26	328	1769307150322969176	esp-idf/main/CMakeFiles/__idf_main.dir/__/rgbLED/rgbLED.cpp.obj	2aba477fe76725f7
+328	353	1769307150624214275	esp-idf/main/libmain.a	f67b3e64ded64ce4
+353	3786	1769307154067941551	esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
+353	3786	1769307154067941551	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
+3786	4051	1769307154082640928	rgbLED.elf	a308541387af4813
+4051	4135	1769307154431346204	.bin_timestamp	fed0cec860d8205c
+4051	4135	1769307154431346204	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/.bin_timestamp	fed0cec860d8205c
+4135	4162	1769307154431669917	esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+4135	4162	1769307154431669917	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+26	57	1769307165206564550	esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+26	57	1769307165206564550	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+25	72	1769307165206237670	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+25	72	1769307165206237670	bootloader/bootloader.elf	b7d884e05a7c7007
+25	72	1769307165206237670	bootloader/bootloader.bin	b7d884e05a7c7007
+25	72	1769307165206237670	bootloader/bootloader.map	b7d884e05a7c7007
+25	72	1769307165206237670	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+25	72	1769307165206237670	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
+25	72	1769307165206237670	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
+25	72	1769307165206237670	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
+72	80	1769307165252971171	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+72	80	1769307165252971171	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+80	99	1769307165279286000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+80	99	1769307165279286000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+80	99	1769307165279286000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+80	99	1769307165279286000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+24	53	1769307170030237107	esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+24	53	1769307170030237107	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+24	64	1769307170029937895	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+24	64	1769307170029937895	bootloader/bootloader.elf	b7d884e05a7c7007
+24	64	1769307170029937895	bootloader/bootloader.bin	b7d884e05a7c7007
+24	64	1769307170029937895	bootloader/bootloader.map	b7d884e05a7c7007
+24	64	1769307170029937895	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+24	64	1769307170029937895	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
+24	64	1769307170029937895	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
+24	64	1769307170029937895	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
+64	71	1769307170069927633	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+64	71	1769307170069927633	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+72	92	1769307170097200000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+72	92	1769307170097200000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+72	92	1769307170097200000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+72	92	1769307170097200000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+92	2664	1769307170097547694	CMakeFiles/flash	30b24541557024e4
+92	2664	1769307170097547694	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/flash	30b24541557024e4
+27	78	1769307305059938783	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+27	78	1769307305059938783	bootloader/bootloader.elf	b7d884e05a7c7007
+27	78	1769307305059938783	bootloader/bootloader.bin	b7d884e05a7c7007
+27	78	1769307305059938783	bootloader/bootloader.map	b7d884e05a7c7007
+27	78	1769307305059938783	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+27	78	1769307305059938783	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
+27	78	1769307305059938783	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
+27	78	1769307305059938783	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
+78	86	1769307305110413171	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+78	86	1769307305110413171	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+86	102	1769307305134643000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+86	102	1769307305134643000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+86	102	1769307305134643000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+86	102	1769307305134643000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+27	302	1769307305059567486	esp-idf/main/CMakeFiles/__idf_main.dir/__/rgbLED/rgbLED.cpp.obj	2aba477fe76725f7
+302	332	1769307305334726417	esp-idf/main/libmain.a	f67b3e64ded64ce4
+332	3556	1769307308572337799	esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
+332	3556	1769307308572337799	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
+3556	3974	1769307308588640281	rgbLED.elf	a308541387af4813
+3974	4064	1769307309096760082	.bin_timestamp	fed0cec860d8205c
+3974	4064	1769307309096760082	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/.bin_timestamp	fed0cec860d8205c
+4064	4092	1769307309097143213	esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+4064	4092	1769307309097143213	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+24	52	1769307311138177582	esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+24	52	1769307311138177582	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+24	66	1769307311137831910	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+24	66	1769307311137831910	bootloader/bootloader.elf	b7d884e05a7c7007
+24	66	1769307311137831910	bootloader/bootloader.bin	b7d884e05a7c7007
+24	66	1769307311137831910	bootloader/bootloader.map	b7d884e05a7c7007
+24	66	1769307311137831910	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+24	66	1769307311137831910	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
+24	66	1769307311137831910	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
+24	66	1769307311137831910	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
+66	73	1769307311179551631	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+66	73	1769307311179551631	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+73	90	1769307311202717000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+73	90	1769307311202717000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+73	90	1769307311202717000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+73	90	1769307311202717000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+91	2823	1769307311204380028	CMakeFiles/flash	30b24541557024e4
+91	2823	1769307311204380028	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/flash	30b24541557024e4
+25	74	1769307483748441023	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+25	74	1769307483748441023	bootloader/bootloader.elf	b7d884e05a7c7007
+25	74	1769307483748441023	bootloader/bootloader.bin	b7d884e05a7c7007
+25	74	1769307483748441023	bootloader/bootloader.map	b7d884e05a7c7007
+25	74	1769307483748441023	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+25	74	1769307483748441023	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
+25	74	1769307483748441023	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
+25	74	1769307483748441023	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
+74	81	1769307483797056051	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+74	81	1769307483797056051	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+81	98	1769307483820509000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+81	98	1769307483820509000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+81	98	1769307483820509000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+81	98	1769307483820509000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+25	70	1769307512994691202	bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+25	70	1769307512994691202	bootloader/bootloader.elf	b7d884e05a7c7007
+25	70	1769307512994691202	bootloader/bootloader.bin	b7d884e05a7c7007
+25	70	1769307512994691202	bootloader/bootloader.map	b7d884e05a7c7007
+25	70	1769307512994691202	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	b7d884e05a7c7007
+25	70	1769307512994691202	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf	b7d884e05a7c7007
+25	70	1769307512994691202	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.bin	b7d884e05a7c7007
+25	70	1769307512994691202	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.map	b7d884e05a7c7007
+70	78	1769307513039997724	bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+70	78	1769307513039997724	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	2461086bbb960a33
+78	95	1769307513064110000	CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+78	95	1769307513064110000	bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+78	95	1769307513064110000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/bootloader-complete	41cb74cd63b97cdf
+78	95	1769307513064110000	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	41cb74cd63b97cdf
+25	320	1769307512994352822	esp-idf/main/CMakeFiles/__idf_main.dir/__/rgbLED/rgbLED.cpp.obj	2aba477fe76725f7
+320	345	1769307513289933587	esp-idf/main/libmain.a	f67b3e64ded64ce4
+345	3548	1769307516501368636	esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
+345	3548	1769307516501368636	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esp_system/ld/sections.ld	b5a591057bf4a136
+3548	3831	1769307516517979956	rgbLED.elf	a308541387af4813
+3831	3918	1769307516887139939	.bin_timestamp	fed0cec860d8205c
+3831	3918	1769307516887139939	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/.bin_timestamp	fed0cec860d8205c
+3918	3945	1769307516887463277	esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+3918	3945	1769307516887463277	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/esp-idf/esptool_py/CMakeFiles/app_check_size	518d37a79daff2ef
+3945	6530	1769307516914429037	CMakeFiles/flash	30b24541557024e4
+3945	6530	1769307516914429037	/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/CMakeFiles/flash	30b24541557024e4

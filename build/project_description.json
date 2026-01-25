@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "rgbLED",
-    "project_version":    "39f199f-dirty",
+    "project_version":    "2072bc1-dirty",
     "project_path":       "/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter",
     "idf_path":           "/Users/talemile/esp/v5.5.1/esp-idf",
     "build_dir":          "/Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build",
