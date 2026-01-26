@@ -1,0 +1,146 @@
+Command: /Users/talemile/.espressif/python_env/idf5.5_py3.11_env/bin/python /Users/talemile/esp/v5.5.1/esp-idf/tools/idf_monitor.py -p /dev/tty.usbmodem1101 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace /Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/rgbLED.elf /Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/breath.elf /Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf -m '/Users/talemile/.espressif/python_env/idf5.5_py3.11_env/bin/python' '/Users/talemile/esp/v5.5.1/esp-idf/tools/idf.py' '-p' '/dev/tty.usbmodem1101'
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c48c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15ac
+load:0x403cbf10,len:0xc34
+load:0x403ce710,len:0x2fd0
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v5.5.1-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Dec 22 2025 08:51:00[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (25) boot: efuse block revision: v1.3[0m
+[0;32mI (29) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (47) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (60) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=19e90h (106128) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=00029eb8 vaddr=3fc94800 size=02f24h ( 12068) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=0002cde4 vaddr=40380000 size=03234h ( 12852) load[0m
+[0;32mI (107) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=9734ch (619340) map[0m
+[0;32mI (210) esp_image: segment 4: paddr=000c7374 vaddr=40383234 size=11430h ( 70704) load[0m
+[0;32mI (224) esp_image: segment 5: paddr=000d87ac vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (231) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (231) boot: Disabling RNG early entropy source...[0m
+[0;32mI (241) cpu_start: Unicore app[0m
+[0;32mI (250) cpu_start: Pro cpu start user code[0m
+[0;32mI (250) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (250) app_init: Application information:[0m
+[0;32mI (250) app_init: Project name:     rgbLED[0m
+[0;32mI (254) app_init: App version:      3452e59-dirty[0m
+[0;32mI (258) app_init: Compile time:     Jan 24 2026 23:27:48[0m
+[0;32mI (263) app_init: ELF file SHA256:  58aaf2ab8...[0m
+[0;32mI (267) app_init: ESP-IDF:          v5.5.1-dirty[0m
+[0;32mI (272) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (276) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (280) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (284) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (290) heap_init: At 3FC9BB20 len 000244E0 (145 KiB): RAM[0m
+[0;32mI (295) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (301) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (307) heap_init: At 50000020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (313) spi_flash: detected chip: generic[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (319) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (332) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (337) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (344) main_task: Started on CPU0[0m
+[0;32mI (344) main_task: Calling app_main()[0m
+[0;32mI (354) pp: pp rom version: 9387209[0m
+[0;32mI (354) net80211: net80211 rom version: 9387209[0m
+[0;32mI (364) wifi:wifi driver task: 3fca4678, prio:23, stack:6656, core=0[0m
+[0;32mI (364) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (364) wifi:wifi certification version: v7.0[0m
+[0;32mI (364) wifi:config NVS flash: enabled[0m
+[0;32mI (374) wifi:config nano formatting: disabled[0m
+[0;32mI (374) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (384) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (384) wifi:Init management short buffer num: 32[0m
+[0;32mI (384) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (394) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (394) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (404) wifi:Init static rx buffer num: 10[0m
+[0;32mI (404) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (404) wifi_init: rx ba win: 6[0m
+[0;32mI (414) wifi_init: accept mbox: 6[0m
+[0;32mI (414) wifi_init: tcpip mbox: 32[0m
+[0;32mI (414) wifi_init: udp mbox: 6[0m
+[0;32mI (424) wifi_init: tcp mbox: 6[0m
+[0;32mI (424) wifi_init: tcp tx win: 5760[0m
+[0;32mI (424) wifi_init: tcp rx win: 5760[0m
+[0;32mI (434) wifi_init: tcp mss: 1440[0m
+[0;32mI (434) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (434) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (444) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (444) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (494) wifi:mode : sta (10:b4:1d:15:b1:60)[0m
+[0;32mI (494) wifi:enable tsf[0m
+[0;32mI (494) RGBLED: Station started[0m
+[0;32mI (494) RGBLED: LEDC timer configured: 1000 Hz, 10-bit[0m
+[0;32mI (494) RGBLED: LEDC channel configured on GPIO 5[0m
+[0;32mI (494) RGBLED: LEDC channel configured on GPIO 4[0m
+[0;32mI (504) RGBLED: LEDC channel configured on GPIO 2[0m
+[0;32mI (524) main_task: Returned from app_main()[0m
+[0;32mI (1994) RGBLED: Starting WiFi scan...[0m
+[0;32mI (4494) RGBLED: Scan done. APs found: 17[0m
+[0;32mI (4494) RGBLED: [ 0] SSID='Demengetal1' RSSI=-58 CH=6 AUTH=WPA2 BSSID=3C:28:6D:54:F5:9B[0m
+[0;32mI (4494) RGBLED: [ 1] SSID='Scaredy_cat_EXT' RSSI=-63 CH=1 AUTH=WPA2 BSSID=CC:BA:BD:45:50:CE[0m
+[0;32mI (4494) RGBLED: [ 2] SSID='Demengetal1' RSSI=-67 CH=6 AUTH=WPA2 BSSID=30:FD:38:D3:0A:FB[0m
+[0;32mI (4504) RGBLED: [ 3] SSID='setupF02A0' RSSI=-72 CH=6 AUTH=WPA2 BSSID=58:CB:52:DD:F0:2A[0m
+[0;32mI (4514) RGBLED: [ 4] SSID='Scaredy_cat' RSSI=-74 CH=1 AUTH=WPA2 BSSID=8C:8B:5B:5B:00:A9[0m
+[0;32mI (4524) RGBLED: [ 5] SSID='Demengetal1' RSSI=-76 CH=6 AUTH=WPA2 BSSID=3C:28:6D:55:DC:C7[0m
+[0;32mI (4534) RGBLED: [ 6] SSID='kobchou2' RSSI=-77 CH=10 AUTH=WPA2 BSSID=E4:C3:2A:74:FE:4F[0m
+[0;32mI (4534) RGBLED: [ 7] SSID='Verizon_4FPC76' RSSI=-80 CH=1 AUTH=WPA2 BSSID=8C:8B:5B:5F:13:1D[0m
+[0;32mI (4544) RGBLED: [ 8] SSID='Demengetal1' RSSI=-81 CH=11 AUTH=WPA2 BSSID=30:FD:38:D3:0B:ED[0m
+[0;32mI (4554) RGBLED: [ 9] SSID='DIRECT-nhB0-TS9100series' RSSI=-84 CH=6 AUTH=WPA2 BSSID=F6:A9:97:59:D2:B0[0m
+[0;32mI (4564) RGBLED: [10] SSID='nachowifi-guest' RSSI=-85 CH=6 AUTH=WPA2 BSSID=B8:7B:D4:8E:54:90[0m
+[0;32mI (4574) RGBLED: [11] SSID='pnphome7' RSSI=-88 CH=2 AUTH=WPA2/WPA3 BSSID=72:28:AA:29:8D:99[0m
+[0;32mI (4574) RGBLED: [12] SSID='nachowifi' RSSI=-88 CH=11 AUTH=WPA2 BSSID=90:CA:FA:75:DF:BD[0m
+[0;32mI (4584) RGBLED: [13] SSID='Demengetal1' RSSI=-88 CH=11 AUTH=WPA2 BSSID=30:FD:38:D3:0B:E2[0m
+[0;32mI (4594) RGBLED: [14] SSID='Verizon_MHVR74' RSSI=-89 CH=1 AUTH=WPA2 BSSID=78:67:0E:34:C9:BE[0m
+[0;32mI (4604) RGBLED: [15] SSID='Demengetal1' RSSI=-90 CH=1 AUTH=WPA2 BSSID=3C:28:6D:55:1B:E4[0m
+[0;32mI (4614) RGBLED: [16] SSID='' RSSI=-91 CH=2 AUTH=WPA2/WPA3 BSSID=7A:28:AA:29:8F:AA[0m
+[0;32mI (7614) RGBLED: Starting WiFi scan...[0m
+[0;32mI (10114) RGBLED: Scan done. APs found: 17[0m
+[0;32mI (10114) RGBLED: [ 0] SSID='Demengetal1' RSSI=-57 CH=6 AUTH=WPA2 BSSID=3C:28:6D:54:F5:9B[0m
+[0;32mI (10114) RGBLED: [ 1] SSID='Scaredy_cat_EXT' RSSI=-63 CH=1 AUTH=WPA2 BSSID=CC:BA:BD:45:50:CE[0m
+[0;32mI (10114) RGBLED: [ 2] SSID='Demengetal1' RSSI=-67 CH=6 AUTH=WPA2 BSSID=30:FD:38:D3:0A:FB[0m
+[0;32mI (10124) RGBLED: [ 3] SSID='setupF02A0' RSSI=-72 CH=6 AUTH=WPA2 BSSID=58:CB:52:DD:F0:2A[0m
+[0;32mI (10134) RGBLED: [ 4] SSID='Scaredy_cat' RSSI=-75 CH=1 AUTH=WPA2 BSSID=8C:8B:5B:5B:00:A9[0m
+[0;32mI (10144) RGBLED: [ 5] SSID='Demengetal1' RSSI=-76 CH=6 AUTH=WPA2 BSSID=3C:28:6D:55:DC:C7[0m
+[0;32mI (10154) RGBLED: [ 6] SSID='' RSSI=-77 CH=5 AUTH=WPA2/WPA3 BSSID=86:69:1A:98:26:6C[0m
+[0;32mI (10154) RGBLED: [ 7] SSID='kobchou2' RSSI=-79 CH=10 AUTH=WPA2 BSSID=E4:C3:2A:74:FE:4F[0m
+[0;32mI (10164) RGBLED: [ 8] SSID='Verizon_4FPC76' RSSI=-80 CH=1 AUTH=WPA2 BSSID=8C:8B:5B:5F:13:1D[0m
+[0;32mI (10174) RGBLED: [ 9] SSID='SpectrumSetup-A9' RSSI=-84 CH=1 AUTH=WPA2 BSSID=F8:AA:3F:EB:AD:AB[0m
+[0;32mI (10184) RGBLED: [10] SSID='SMA3006203689' RSSI=-85 CH=6 AUTH=WPA2 BSSID=68:47:49:2C:8C:BB[0m
+[0;32mI (10194) RGBLED: [11] SSID='nachowifi-guest' RSSI=-85 CH=11 AUTH=WPA2 BSSID=90:CA:FA:75:DF:BE[0m
+[0;32mI (10194) RGBLED: [12] SSID='Demengetal1' RSSI=-86 CH=11 AUTH=WPA2 BSSID=30:FD:38:D3:0B:ED[0m
+[0;32mI (10204) RGBLED: [13] SSID='Demengetal1' RSSI=-87 CH=11 AUTH=WPA2 BSSID=30:FD:38:D3:0B:E2[0m
+[0;32mI (10214) RGBLED: [14] SSID='' RSSI=-88 CH=2 AUTH=WPA2/WPA3 BSSID=CC:28:AA:29:8D:98[0m
+[0;32mI (10224) RGBLED: [15] SSID='Huntington Mesh' RSSI=-88 CH=8 AUTH=WPA2 BSSID=BC:A5:11:F5:8A:7E[0m
+[0;32mI (10234) RGBLED: [16] SSID='Demengetal1' RSSI=-91 CH=1 AUTH=WPA2 BSSID=3C:28:6D:55:1B:E4[0m
+[0;32mI (13234) RGBLED: Starting WiFi scan...[0m
+[0;32mI (15734) RGBLED: Scan done. APs found: 13[0m
+[0;32mI (15734) RGBLED: [ 0] SSID='Demengetal1' RSSI=-57 CH=6 AUTH=WPA2 BSSID=3C:28:6D:54:F5:9B[0m
+[0;32mI (15734) RGBLED: [ 1] SSID='Scaredy_cat_EXT' RSSI=-65 CH=1 AUTH=WPA2 BSSID=CC:BA:BD:45:50:CE[0m
+[0;32mI (15734) RGBLED: [ 2] SSID='Demengetal1' RSSI=-67 CH=6 AUTH=WPA2 BSSID=30:FD:38:D3:0A:FB[0m
+[0;32mI (15744) RGBLED: [ 3] SSID='Demengetal1' RSSI=-72 CH=6 AUTH=WPA2 BSSID=3C:28:6D:55:DC:C7[0m
+[0;32mI (15754) RGBLED: [ 4] SSID='Scaredy_cat' RSSI=-76 CH=1 AUTH=WPA2 BSSID=8C:8B:5B:5B:00:A9[0m
+[0;32mI (15764) RGBLED: [ 5] SSID='DIRECT-nhB0-TS9100series' RSSI=-83 CH=6 AUTH=WPA2 BSSID=F6:A9:97:59:D2:B0[0m
+[0;32mI (15774) RGBLED: [ 6] SSID='Demengetal1' RSSI=-83 CH=11 AUTH=WPA2 BSSID=30:FD:38:D3:0B:ED[0m
+[0;32mI (15784) RGBLED: [ 7] SSID='nachowifi-guest' RSSI=-83 CH=11 AUTH=WPA2 BSSID=90:CA:FA:75:DF:BE[0m
+[0;32mI (15784) RGBLED: [ 8] SSID='nachowifi' RSSI=-86 CH=11 AUTH=WPA2 BSSID=90:CA:FA:75:DF:BD[0m
+[0;32mI (15794) RGBLED: [ 9] SSID='SMA3006203689' RSSI=-87 CH=6 AUTH=WPA2 BSSID=68:47:49:2C:8C:BB[0m
+[0;32mI (15804) RGBLED: [10] SSID='' RSSI=-89 CH=2 AUTH=WPA2/WPA3 BSSID=7A:28:AA:29:8F:AA[0m
+[0;32mI (15814) RGBLED: [11] SSID='Demengetal1' RSSI=-92 CH=1 AUTH=WPA2 BSSID=3C:28:6D:55:1B:E4[0m
+[0;32mI (15814) RGBLED: [12] SSID='Verizon_MHVR74' RSSI=-93 CH=1 AUTH=WPA2 BSSID=78:67:0E:34:C9:BE[0m
+[0;32mI (18824) RGBLED: Scan task done.[0m

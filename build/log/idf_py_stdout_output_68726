@@ -1,0 +1,255 @@
+Command: /Users/talemile/.espressif/python_env/idf5.5_py3.11_env/bin/python /Users/talemile/esp/v5.5.1/esp-idf/tools/idf_monitor.py -p /dev/tty.usbmodem1101 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace /Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/rgbLED.elf /Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/breath.elf /Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf -m '/Users/talemile/.espressif/python_env/idf5.5_py3.11_env/bin/python' '/Users/talemile/esp/v5.5.1/esp-idf/tools/idf.py' '-p' '/dev/tty.usbmodem1101'
+[0;32mI (306) heap_init: At 3FCDC710 len 00002950 (10 KiB): RetenESP-ROM:esp32c3-api1-20210207[0m
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0d4
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15ac
+load:0x403cbf10,len:0xc34
+load:0x403ce710,len:0x2fd0
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v5.5.1-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Dec 22 2025 08:51:00[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (25) boot: efuse block revision: v1.3[0m
+[0;32mI (29) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (47) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (60) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=19a74h (105076) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=00029a9c vaddr=3fc94800 size=02f24h ( 12068) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=0002c9c8 vaddr=40380000 size=03650h ( 13904) load[0m
+[0;32mI (107) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=96260h (615008) map[0m
+[0;32mI (210) esp_image: segment 4: paddr=000c6288 vaddr=40383650 size=11014h ( 69652) load[0m
+[0;32mI (223) esp_image: segment 5: paddr=000d72a4 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (229) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (230) boot: Disabling RNG early entropy source...[0m
+[0;32mI (240) cpu_start: Unicore app[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) app_init: Application information:[0m
+[0;32mI (249) app_init: Project name:     rgbLED[0m
+[0;32mI (253) app_init: App version:      3452e59-dirty[0m
+[0;32mI (257) app_init: Compile time:     Jan 24 2026 23:27:48[0m
+[0;32mI (262) app_init: ELF file SHA256:  01112582c...[0m
+[0;32mI (266) app_init: ESP-IDF:          v5.5.1-dirty[0m
+[0;32mI (271) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (275) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (279) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (282) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (289) heap_init: At 3FC9BB20 len 000244E0 (145 KiB): RAM[0m
+[0;32mI (294) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (300) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (306) heap_init: At 50000020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: generic[0m
+[0;32mI (315) spi_flash: flash io: dio[0m
+[0;33mW (318) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (331) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (336) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (343) main_task: Started on CPU0[0m
+[0;32mI (343) main_task: Calling app_main()[0m
+[0;32mI (353) pp: pp rom version: 9387209[0m
+[0;32mI (353) net80211: net80211 rom version: 9387209[0m
+[0;32mI (363) wifi:wifi driver task: 3fca45f4, prio:23, stack:6656, core=0[0m
+[0;32mI (363) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (363) wifi:wifi certification version: v7.0[0m
+[0;32mI (363) wifi:config NVS flash: enabled[0m
+[0;32mI (373) wifi:config nano formatting: disabled[0m
+[0;32mI (373) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (383) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (383) wifi:Init management short buffer num: 32[0m
+[0;32mI (383) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (393) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (393) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (403) wifi:Init static rx buffer num: 10[0m
+[0;32mI (403) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (403) wifi_init: rx ba win: 6[0m
+[0;32mI (413) wifi_init: accept mbox: 6[0m
+[0;32mI (413) wifi_init: tcpip mbox: 32[0m
+[0;32mI (413) wifi_init: udp mbox: 6[0m
+[0;32mI (423) wifi_init: tcp mbox: 6[0m
+[0;32mI (423) wifi_init: tcp tx win: 5760[0m
+[0;32mI (423) wifi_init: tcp rx win: 5760[0m
+[0;32mI (433) wifi_init: tcp mss: 1440[0m
+[0;32mI (433) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (433) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (443) RGBLED: Trying to connect to SSID: [EmilePhone][0m
+[0;33mW (443) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (453) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (493) wifi:mode : sta (10:b4:1d:15:b1:60)[0m
+[0;32mI (493) wifi:enable tsf[0m
+[0;32mI (493) RGBLED: Station started[0m
+[0;32mI (493) RGBLED: LEDC timer configured: 1000 Hz, 10-bit[0m
+[0;32mI (503) RGBLED: LEDC channel configured on GPIO 5[0m
+[0;32mI (503) RGBLED: LEDC channel configured on GPIO 4[0m
+[0;32mI (503) RGBLED: LEDC channel configured on GPIO 2[0m
+[0;32mI (533) main_task: Returned from app_main()[0m
+[0;32mI (2903) RGBLED: Station disconnected[0m
+[0;32mI (2903) RGBLED: Reason: 201[0m
+[0;32mI (2903) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (5313) RGBLED: Station disconnected[0m
+[0;32mI (5313) RGBLED: Reason: 201[0m
+[0;32mI (5313) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (7723) RGBLED: Station disconnected[0m
+[0;32mI (7723) RGBLED: Reason: 201[0m
+[0;32mI (7723) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (10133) RGBLED: Station disconnected[0m
+[0;32mI (10133) RGBLED: Reason: 201[0m
+[0;32mI (10133) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (12543) RGBLED: Station disconnected[0m
+[0;32mI (12543) RGBLED: Reason: 201[0m
+[0;32mI (12543) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (14953) RGBLED: Station disconnected[0m
+[0;32mI (14953) RGBLED: Reason: 201[0m
+[0;32mI (14953) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (17363) RGBLED: Station disconnected[0m
+[0;32mI (17363) RGBLED: Reason: 201[0m
+[0;32mI (17363) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (19773) RGBLED: Station disconnected[0m
+[0;32mI (19773) RGBLED: Reason: 201[0m
+[0;32mI (19773) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (22183) RGBLED: Station disconnected[0m
+[0;32mI (22183) RGBLED: Reason: 201[0m
+[0;32mI (22183) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (24593) RGBLED: Station disconnected[0m
+[0;32mI (24593) RGBLED: Reason: 201[0m
+[0;32mI (24593) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (27003) RGBLED: Station disconnected[0m
+[0;32mI (27003) RGBLED: Reason: 201[0m
+[0;32mI (27003) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (29413) RGBLED: Station disconnected[0m
+[0;32mI (29413) RGBLED: Reason: 201[0m
+[0;32mI (29413) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (30113) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (30113) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (31133) wifi:state: auth -> init (0x200)[0m
+[0;32mI (31143) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (31143) RGBLED: Station disconnected[0m
+[0;32mI (31143) RGBLED: Reason: 2[0m
+[0;32mI (31143) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (33553) RGBLED: Station disconnected[0m
+[0;32mI (33553) RGBLED: Reason: 201[0m
+[0;32mI (33553) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (33593) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (33603) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (34613) wifi:state: auth -> init (0x200)[0m
+[0;32mI (34623) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (34623) RGBLED: Station disconnected[0m
+[0;32mI (34623) RGBLED: Reason: 2[0m
+[0;32mI (34623) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (37033) RGBLED: Station disconnected[0m
+[0;32mI (37033) RGBLED: Reason: 205[0m
+[0;32mI (37033) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (37083) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (37083) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (38093) wifi:state: auth -> init (0x200)[0m
+[0;32mI (38103) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (38103) RGBLED: Station disconnected[0m
+[0;32mI (38103) RGBLED: Reason: 2[0m
+[0;32mI (38103) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (40513) RGBLED: Station disconnected[0m
+[0;32mI (40513) RGBLED: Reason: 201[0m
+[0;32mI (40513) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (40563) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (40563) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (41573) wifi:state: auth -> init (0x200)[0m
+[0;32mI (41583) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (41583) RGBLED: Station disconnected[0m
+[0;32mI (41583) RGBLED: Reason: 2[0m
+[0;32mI (41583) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (43993) RGBLED: Station disconnected[0m
+[0;32mI (43993) RGBLED: Reason: 201[0m
+[0;32mI (43993) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (44043) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (44043) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (45053) wifi:state: auth -> init (0x200)[0m
+[0;32mI (45063) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (45063) RGBLED: Station disconnected[0m
+[0;32mI (45063) RGBLED: Reason: 2[0m
+[0;32mI (45063) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (47473) RGBLED: Station disconnected[0m
+[0;32mI (47473) RGBLED: Reason: 201[0m
+[0;32mI (47473) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (47523) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (47523) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (48533) wifi:state: auth -> init (0x200)[0m
+[0;32mI (48543) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (48543) RGBLED: Station disconnected[0m
+[0;32mI (48543) RGBLED: Reason: 2[0m
+[0;32mI (48543) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (50953) RGBLED: Station disconnected[0m
+[0;32mI (50953) RGBLED: Reason: 205[0m
+[0;32mI (50953) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (51003) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (51003) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (52013) wifi:state: auth -> init (0x200)[0m
+[0;32mI (52023) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (52023) RGBLED: Station disconnected[0m
+[0;32mI (52023) RGBLED: Reason: 2[0m
+[0;32mI (52023) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (54433) RGBLED: Station disconnected[0m
+[0;32mI (54433) RGBLED: Reason: 205[0m
+[0;32mI (54433) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (56843) RGBLED: Station disconnected[0m
+[0;32mI (56843) RGBLED: Reason: 201[0m
+[0;32mI (56843) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (59253) RGBLED: Station disconnected[0m
+[0;32mI (59253) RGBLED: Reason: 201[0m
+[0;32mI (59253) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (61663) RGBLED: Station disconnected[0m
+[0;32mI (61663) RGBLED: Reason: 201[0m
+[0;32mI (61663) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (61753) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (61763) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (62773) wifi:state: auth -> init (0x200)[0m
+[0;32mI (62783) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (62783) RGBLED: Station disconnected[0m
+[0;32mI (62783) RGBLED: Reason: 2[0m
+[0;32mI (62783) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (65193) RGBLED: Station disconnected[0m
+[0;32mI (65193) RGBLED: Reason: 201[0m
+[0;32mI (65193) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (65243) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (65243) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (66253) wifi:state: auth -> init (0x200)[0m
+[0;32mI (66263) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (66263) RGBLED: Station disconnected[0m
+[0;32mI (66263) RGBLED: Reason: 2[0m
+[0;32mI (66263) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (68673) RGBLED: Station disconnected[0m
+[0;32mI (68673) RGBLED: Reason: 205[0m
+[0;32mI (68673) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (68723) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (68723) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (69733) wifi:state: auth -> init (0x200)[0m
+[0;32mI (69743) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (69743) RGBLED: Station disconnected[0m
+[0;32mI (69743) RGBLED: Reason: 2[0m
+[0;32mI (69743) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (72153) RGBLED: Station disconnected[0m
+[0;32mI (72153) RGBLED: Reason: 205[0m
+[0;32mI (72153) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (72203) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (72203) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (73213) wifi:state: auth -> init (0x200)[0m
+[0;32mI (73223) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (73223) RGBLED: Station disconnected[0m
+[0;32mI (73223) RGBLED: Reason: 2[0m
+[0;32mI (73223) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (75633) RGBLED: Station disconnected[0m
+[0;32mI (75633) RGBLED: Reason: 201[0m
+[0;32mI (75633) RGBLED: esp_wifi_connect() -> ESP_OK[0m
+[0;32mI (75683) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (75683) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (76693) wifi:state: auth -> init (0x200)[0m
+[0;32mI (76703) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (76703) RGBLED: Station disconnected[0m
+[0;32mI (76703) RGBLED: Reason: 2[0m
+[0;32mI (76703) RGBLED: esp_wifi_connect() -> ESP_OK[0m

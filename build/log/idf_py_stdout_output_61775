@@ -1,0 +1,42 @@
+Command: /Users/talemile/.espressif/python_env/idf5.5_py3.11_env/bin/python /Users/talemile/esp/v5.5.1/esp-idf/tools/idf_monitor.py -p /dev/tty.usbmodem1101 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace /Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/rgbLED.elf /Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/breath.elf /Users/talemile/Documents/SAM Labs/Hardware/esp-c3-starter/build/bootloader/bootloader.elf -m '/Users/talemile/.espressif/python_env/idf5.5_py3.11_env/bin/python' '/Users/talemile/esp/v5.5.1/esp-idf/tools/idf.py' '-p' '/dev/tty.usbmodem1101'
+[0;32mI (257) app_init: App version:      3452e59-dirty[0m
+[0;32mI (262) appESP-ROM:esp32c3-api1-20210207[0m
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0d4
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15ac
+load:0x403cbf10,len:0xc34
+load:0x403ce710,len:0x2fd0
+entry 0x403cbf1a
+[0;32mI (1142) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1142) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2142) wifi:state: auth -> init (0x200)[0m
+[0;32mI (2152) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2152) RGBLED: Station disconnected[0m
+[0;32mI (2152) RGBLED: Reason: 2[0m
+[0;32mI (2202) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2202) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3212) wifi:state: auth -> init (0x200)[0m
+[0;32mI (3222) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3222) RGBLED: Station disconnected[0m
+[0;32mI (3222) RGBLED: Reason: 2[0m
+[0;32mI (3232) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3232) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4232) wifi:state: auth -> init (0x200)[0m
+[0;32mI (4242) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (4242) RGBLED: Station disconnected[0m
+[0;32mI (4242) RGBLED: Reason: 2[0m
+[0;32mI (5512) wifi:new:<11,0>, old:<6,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (5512) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (6522) wifi:state: auth -> init (0x200)[0m
+[0;32mI (6532) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (6532) RGBLED: Station disconnected[0m
+[0;32mI (6532) RGBLED: Reason: 2[0m
+[0;32mI (6572) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (6572) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (7582) wifi:state: auth -> init (0x200)[0m
+[0;32mI (7592) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (7592) RGBLED: Station disconnected[0m
+[0;32mI (7592) RGBLED: Reason: 2[0m
