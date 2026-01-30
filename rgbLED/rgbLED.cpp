@@ -49,13 +49,27 @@ struct Rgb {
 bool parse_hex_color(const char *hex_color, Rgb &out);
 
 static esp_err_t color_get_handler(httpd_req_t *req) {
+  // Allocating 128 bytes on the stack (query is a fixed size character array)
+  // Stores a C-string (null terminated text)
   char query[128];
+
+  // Finds the query (everything after ?) in the url, copies to query (defined
+  // above) and adds a \0 at the end (null terminator)
+  // '\0' is a special character whose numeric value is 0, it is called a null
+  // terminator and signals the end of a string in C. Without this, the code
+  // will try to continue reading through memory assuming the string continues
+  // past buffer
   if (httpd_req_get_url_query_str(req, query, sizeof(query)) != ESP_OK) {
     httpd_resp_send_err(req, HTTPD_400_BAD_REQUEST, "Missing query string");
     return ESP_OK;
   }
 
+  // Creates a buffer just for the value (16 bytes) - max 15 characters (16th is
+  // null terminator)
   char hex[16];
+
+  // Looks for key-value (key being 'hex') in the query string and null
+  // terminates
   if (httpd_query_key_value(query, "hex", hex, sizeof(hex)) != ESP_OK) {
     httpd_resp_send_err(req, HTTPD_400_BAD_REQUEST, "Missing ?hex=");
     return ESP_OK;
