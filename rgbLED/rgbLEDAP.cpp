@@ -5,12 +5,10 @@ void app_main(void); // Forward declaration with C linkage
 #define _USE_MATH_DEFINES
 
 #include "driver/ledc.h"
-#include "esp_err.h"
 #include "esp_event.h"
 #include "esp_log.h"
 #include "esp_netif.h"
 #include "esp_wifi.h"
-#include "freertos/FreeRTOS.h"
 #include "freertos/queue.h"
 #include "freertos/task.h"
 #include "nvs_flash.h"
@@ -18,9 +16,6 @@ void app_main(void); // Forward declaration with C linkage
 #include <cmath>
 
 static const char *TAG = "RGBLED";
-const char *ssid = CONFIG_WIFI_STA_SSID;
-const char *password = CONFIG_WIFI_STA_PASSWORD;
-static bool connected = false;
 static QueueHandle_t color_queue = nullptr;
 
 static wifi_config_t wifi_config = {};
@@ -43,88 +38,6 @@ struct Rgb {
   uint8_t b;
 };
 
-// static const char *authmode_to_str(wifi_auth_mode_t a) {
-//   switch (a) {
-//   case WIFI_AUTH_OPEN:
-//     return "OPEN";
-//   case WIFI_AUTH_WEP:
-//     return "WEP";
-//   case WIFI_AUTH_WPA_PSK:
-//     return "WPA";
-//   case WIFI_AUTH_WPA2_PSK:
-//     return "WPA2";
-//   case WIFI_AUTH_WPA_WPA2_PSK:
-//     return "WPA/WPA2";
-//   case WIFI_AUTH_WPA2_ENTERPRISE:
-//     return "WPA2-ENT";
-//   case WIFI_AUTH_WPA3_PSK:
-//     return "WPA3";
-//   case WIFI_AUTH_WPA2_WPA3_PSK:
-//     return "WPA2/WPA3";
-//   default:
-//     return "UNKNOWN";
-//   }
-// }
-
-// static void wifi_scan_once() {
-//   ESP_LOGI(TAG, "Starting WiFi scan...");
-//   // Configure scan: scan all channels, include hidden networks if you want
-//   wifi_scan_config_t scan_cfg = {};
-//   scan_cfg.ssid = NULL;        // NULL = scan all SSIDs
-//   scan_cfg.bssid = NULL;       // NULL = any BSSID
-//   scan_cfg.channel = 0;        // 0 = all channels
-//   scan_cfg.show_hidden = true; // include hidden SSIDs
-//   // Blocking scan: this function will return when scan is complete
-//   esp_err_t err = esp_wifi_scan_start(&scan_cfg, true);
-//   if (err != ESP_OK) {
-//     ESP_LOGE(TAG, "esp_wifi_scan_start failed: %s", esp_err_to_name(err));
-//     return;
-//   }
-//   uint16_t ap_count = 0;
-//   ESP_ERROR_CHECK(esp_wifi_scan_get_ap_num(&ap_count));
-//   ESP_LOGI(TAG, "Scan done. APs found: %u", (unsigned)ap_count);
-//   if (ap_count == 0) {
-//     return;
-//   }
-//   // Limit how many we print (keeps logs readable)
-//   const uint16_t max_to_print = 20;
-//   uint16_t to_fetch = (ap_count > max_to_print) ? max_to_print : ap_count;
-//   wifi_ap_record_t ap_records[max_to_print];
-//   memset(ap_records, 0, sizeof(ap_records));
-//   ESP_ERROR_CHECK(esp_wifi_scan_get_ap_records(&to_fetch, ap_records));
-//   for (int i = 0; i < to_fetch; i++) {
-//     // SSID is a uint8_t[33], safe to print as a string
-//     // ESP_LOGI(TAG, "[%2d] SSID='%s' RSSI=%d CH=%d AUTH=%s", i,
-//     //          (const char *)ap_records[i].ssid, (int)ap_records[i].rssi,
-//     //          (int)ap_records[i].primary,
-//     //          authmode_to_str(ap_records[i].authmode));
-//     ESP_LOGI(TAG,
-//              "[%2d] SSID='%s' RSSI=%d CH=%d AUTH=%s "
-//              "BSSID=%02X:%02X:%02X:%02X:%02X:%02X",
-//              i, (char *)ap_records[i].ssid, ap_records[i].rssi,
-//              ap_records[i].primary, authmode_to_str(ap_records[i].authmode),
-//              ap_records[i].bssid[0], ap_records[i].bssid[1],
-//              ap_records[i].bssid[2], ap_records[i].bssid[3],
-//              ap_records[i].bssid[4], ap_records[i].bssid[5]);
-//   }
-//   if (ap_count > max_to_print) {
-//     ESP_LOGI(TAG, "... (printed %u of %u)", (unsigned)max_to_print,
-//              (unsigned)ap_count);
-//   }
-// }
-
-// static void wifi_scan_task(void *pv) {
-//   // Wait a moment to let WiFi start cleanly
-//   vTaskDelay(pdMS_TO_TICKS(1500));
-//   // Scan a few times (useful if hotspot appears slightly later)
-//   for (int i = 0; i < 3; i++) {
-//     wifi_scan_once();
-//     vTaskDelay(pdMS_TO_TICKS(3000));
-//   }
-//   ESP_LOGI(TAG, "Scan task done.");
-//   vTaskDelete(NULL);
-// }
-
 static void event_handler(void *arg, esp_event_base_t event_base,
                           int32_t event_id, void *event_data) {
   // arg is an optional pointer provided when registering (user context)
@@ -132,32 +45,20 @@ static void event_handler(void *arg, esp_event_base_t event_base,
   // event_id defines the specific event
   // event_data is a pointer to a struct with the event data
 
-  if (event_base == WIFI_EVENT) {
-    if (event_id == WIFI_EVENT_STA_START) {
-      ESP_LOGI(TAG, "Station started");
-      ESP_ERROR_CHECK(esp_wifi_connect());
-    }
-
-    if (event_id == WIFI_EVENT_STA_DISCONNECTED) {
-      wifi_event_sta_disconnected_t *evt =
-          (wifi_event_sta_disconnected_t *)event_data;
-      ESP_LOGI(TAG, "Station disconnected");
-      ESP_LOGI(TAG, "Reason: %d", evt->reason);
-      connected = false;
-      esp_err_t e = esp_wifi_connect();
-      ESP_LOGI(TAG, "esp_wifi_connect() -> %s", esp_err_to_name(e));
-    }
+  if (event_base != WIFI_EVENT) {
+    return;
   }
 
-  if (event_base == IP_EVENT && event_id == IP_EVENT_STA_GOT_IP) {
-    ip_event_got_ip_t *event = (ip_event_got_ip_t *)event_data;
-    ESP_LOGI(TAG, "Station got IP");
-    ESP_LOGI(TAG, "Got IP: " IPSTR, IP2STR(&event->ip_info.ip));
-    connected = true;
+  if (event_id == WIFI_EVENT_AP_STACONNECTED) {
+    ESP_LOGI(TAG, "Station connected");
+  }
+
+  if (event_id == WIFI_EVENT_AP_STADISCONNECTED) {
+    ESP_LOGI(TAG, "Station disconnected");
   }
 }
 
-static void wifi_init_sta() {
+static void wifi_init_softap() {
   esp_err_t err = nvs_flash_init();
   // NVS = non-volatile storage
   // used to store configuration data that needs to persist across reboots
@@ -171,16 +72,16 @@ static void wifi_init_sta() {
     ESP_ERROR_CHECK(nvs_flash_erase());
     err = nvs_flash_init();
   }
-  // ESP_ERROR_CHECK(err);
+  ESP_ERROR_CHECK(err);
   // Canonical pattern to handle nvs init errors (erase and re-flash)
 
   ESP_ERROR_CHECK(esp_netif_init()); // initialize the network interface
   ESP_ERROR_CHECK(esp_event_loop_create_default());
   // default ESP-IDF event loop that wifi posts into
 
-  esp_netif_create_default_wifi_sta();
-  // creates default STA network interface object
-  // includes network interface (eg. sta0), IP, DHCP server
+  esp_netif_create_default_wifi_ap();
+  // creates default AP network interface object
+  // includes network interface (eg. ap0), IP, DHCP server
 
   wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
   // ESP-IDF macro that expands into a struct initialized with default values
@@ -200,33 +101,32 @@ static void wifi_init_sta() {
   // function)
   // NULL is a pointer to the user data (optional)
   // NULL is handler instance output (optional)
-  esp_event_handler_instance_register(IP_EVENT, ESP_EVENT_ANY_ID,
-                                      &event_handler, NULL, NULL);
-  // register event handler for IP events as well
 
-  esp_wifi_set_ps(WIFI_PS_NONE);
-  ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
-  // set the wifi mode to STA (station)
+  ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_AP));
+  // set the wifi mode to AP (access point)
 
   memset(&wifi_config, 0, sizeof(wifi_config));
-  strncpy((char *)wifi_config.sta.ssid, ssid, sizeof(wifi_config.sta.ssid));
-  strncpy((char *)wifi_config.sta.password, password,
-          sizeof(wifi_config.sta.password));
-  //   wifi_config.sta.bssid_set = 1;
-  //   uint8_t target_bssid[6] = {0x3C, 0x28, 0x6D, 0x54, 0xF5, 0x9B};
-  //   memcpy(wifi_config.sta.bssid, target_bssid, 6);
+  strncpy((char *)wifi_config.ap.ssid, "ESP32-RGB",
+          sizeof(wifi_config.ap.ssid));
+  wifi_config.ap.ssid_len = strlen("ESP32-RGB");
+  // strncpy((char *)wifi_config.ap.password, "12345678",
+  //         sizeof(wifi_config.ap.password));
+  wifi_config.ap.channel = 1;
+  wifi_config.ap.max_connection = 1;
+  // wifi_config.ap.authmode = WIFI_AUTH_WPA2_PSK;
+  wifi_config.ap.authmode = WIFI_AUTH_OPEN;
+  wifi_config.ap.ssid_hidden = 0;
 
-  //   wifi_config.sta.scan_method = WIFI_ALL_CHANNEL_SCAN;
-  //   wifi_config.sta.sort_method = WIFI_CONNECT_AP_BY_SIGNAL;
-  //   wifi_config.sta.pmf_cfg.capable = true;
-  //   wifi_config.sta.pmf_cfg.required = false;
-  ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_config));
+  ESP_LOGI(TAG, "SoftAP SSID configured as: %s (len=%d)",
+           (char *)wifi_config.ap.ssid, (int)wifi_config.ap.ssid_len);
+  ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_AP, &wifi_config));
   // set the wifi configuration
 
   ESP_ERROR_CHECK(esp_wifi_start());
   // start the wifi driver (begin broadcasting)
 
-  // xTaskCreate(wifi_scan_task, "wifi_scan_task", 4096, NULL, 5, NULL);
+  ESP_LOGI(TAG, "SoftAP started: SSID=%s, password=%s, IP=192.168.4.1",
+           (char *)wifi_config.ap.ssid, (char *)wifi_config.ap.password);
 }
 
 void initialize_gamma_table(RgbLed &rgb_led) {
@@ -413,7 +313,8 @@ void handle_rgb(void *pvParameter) {
 }
 
 extern "C" void app_main(void) {
-  wifi_init_sta();
+  esp_log_level_set("wifi", ESP_LOG_DEBUG);
+  wifi_init_softap();
   static RgbLed rgb_led = {
       .mode = LEDC_LOW_SPEED_MODE,
       .timer = LEDC_TIMER_0,

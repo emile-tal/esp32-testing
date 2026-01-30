@@ -1,0 +1,14 @@
+# ESP-IDF build output
+/build/
+
+# ESP-IDF cache
+/.cache/
+
+# Local SDK config (contains secrets!)
+sdkconfig
+sdkconfig.old
+sdkconfig.bak
+sdkconfig.save
+
+# OS junk
+.DS_Store

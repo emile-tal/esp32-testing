@@ -1,0 +1,16 @@
+menu "WiFi Configuration"
+
+    config WIFI_STA_SSID
+        string "STA SSID"
+        default ""
+        help
+            SSID for the wifi network
+    
+    config WIFI_STA_PASSWORD
+        string "STA Password"
+        default ""
+        help
+            Password for the wifi network
+    
+    endmenu
+    
