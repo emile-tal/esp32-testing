@@ -7,6 +7,7 @@ void app_main(void); // Forward declaration with C linkage
 #include "driver/ledc.h"
 #include "esp_err.h"
 #include "esp_event.h"
+#include "esp_http_server.h"
 #include "esp_log.h"
 #include "esp_netif.h"
 #include "esp_wifi.h"
@@ -24,6 +25,7 @@ static bool connected = false;
 static QueueHandle_t color_queue = nullptr;
 
 static wifi_config_t wifi_config = {};
+static httpd_handle_t server = NULL;
 
 struct RgbLed {
   ledc_mode_t mode;
@@ -43,87 +45,54 @@ struct Rgb {
   uint8_t b;
 };
 
-// static const char *authmode_to_str(wifi_auth_mode_t a) {
-//   switch (a) {
-//   case WIFI_AUTH_OPEN:
-//     return "OPEN";
-//   case WIFI_AUTH_WEP:
-//     return "WEP";
-//   case WIFI_AUTH_WPA_PSK:
-//     return "WPA";
-//   case WIFI_AUTH_WPA2_PSK:
-//     return "WPA2";
-//   case WIFI_AUTH_WPA_WPA2_PSK:
-//     return "WPA/WPA2";
-//   case WIFI_AUTH_WPA2_ENTERPRISE:
-//     return "WPA2-ENT";
-//   case WIFI_AUTH_WPA3_PSK:
-//     return "WPA3";
-//   case WIFI_AUTH_WPA2_WPA3_PSK:
-//     return "WPA2/WPA3";
-//   default:
-//     return "UNKNOWN";
-//   }
-// }
+// Forward declaration - allows parse_hex_color to be used before it's defined
+bool parse_hex_color(const char *hex_color, Rgb &out);
 
-// static void wifi_scan_once() {
-//   ESP_LOGI(TAG, "Starting WiFi scan...");
-//   // Configure scan: scan all channels, include hidden networks if you want
-//   wifi_scan_config_t scan_cfg = {};
-//   scan_cfg.ssid = NULL;        // NULL = scan all SSIDs
-//   scan_cfg.bssid = NULL;       // NULL = any BSSID
-//   scan_cfg.channel = 0;        // 0 = all channels
-//   scan_cfg.show_hidden = true; // include hidden SSIDs
-//   // Blocking scan: this function will return when scan is complete
-//   esp_err_t err = esp_wifi_scan_start(&scan_cfg, true);
-//   if (err != ESP_OK) {
-//     ESP_LOGE(TAG, "esp_wifi_scan_start failed: %s", esp_err_to_name(err));
-//     return;
-//   }
-//   uint16_t ap_count = 0;
-//   ESP_ERROR_CHECK(esp_wifi_scan_get_ap_num(&ap_count));
-//   ESP_LOGI(TAG, "Scan done. APs found: %u", (unsigned)ap_count);
-//   if (ap_count == 0) {
-//     return;
-//   }
-//   // Limit how many we print (keeps logs readable)
-//   const uint16_t max_to_print = 20;
-//   uint16_t to_fetch = (ap_count > max_to_print) ? max_to_print : ap_count;
-//   wifi_ap_record_t ap_records[max_to_print];
-//   memset(ap_records, 0, sizeof(ap_records));
-//   ESP_ERROR_CHECK(esp_wifi_scan_get_ap_records(&to_fetch, ap_records));
-//   for (int i = 0; i < to_fetch; i++) {
-//     // SSID is a uint8_t[33], safe to print as a string
-//     // ESP_LOGI(TAG, "[%2d] SSID='%s' RSSI=%d CH=%d AUTH=%s", i,
-//     //          (const char *)ap_records[i].ssid, (int)ap_records[i].rssi,
-//     //          (int)ap_records[i].primary,
-//     //          authmode_to_str(ap_records[i].authmode));
-//     ESP_LOGI(TAG,
-//              "[%2d] SSID='%s' RSSI=%d CH=%d AUTH=%s "
-//              "BSSID=%02X:%02X:%02X:%02X:%02X:%02X",
-//              i, (char *)ap_records[i].ssid, ap_records[i].rssi,
-//              ap_records[i].primary, authmode_to_str(ap_records[i].authmode),
-//              ap_records[i].bssid[0], ap_records[i].bssid[1],
-//              ap_records[i].bssid[2], ap_records[i].bssid[3],
-//              ap_records[i].bssid[4], ap_records[i].bssid[5]);
-//   }
-//   if (ap_count > max_to_print) {
-//     ESP_LOGI(TAG, "... (printed %u of %u)", (unsigned)max_to_print,
-//              (unsigned)ap_count);
-//   }
-// }
+static esp_err_t color_get_handler(httpd_req_t *req) {
+  char query[128];
+  if (httpd_req_get_url_query_str(req, query, sizeof(query)) != ESP_OK) {
+    httpd_resp_send_err(req, HTTPD_400_BAD_REQUEST, "Missing query string");
+    return ESP_OK;
+  }
 
-// static void wifi_scan_task(void *pv) {
-//   // Wait a moment to let WiFi start cleanly
-//   vTaskDelay(pdMS_TO_TICKS(1500));
-//   // Scan a few times (useful if hotspot appears slightly later)
-//   for (int i = 0; i < 3; i++) {
-//     wifi_scan_once();
-//     vTaskDelay(pdMS_TO_TICKS(3000));
-//   }
-//   ESP_LOGI(TAG, "Scan task done.");
-//   vTaskDelete(NULL);
-// }
+  char hex[16];
+  if (httpd_query_key_value(query, "hex", hex, sizeof(hex)) != ESP_OK) {
+    httpd_resp_send_err(req, HTTPD_400_BAD_REQUEST, "Missing ?hex=");
+    return ESP_OK;
+  }
+
+  Rgb rgb;
+  if (!parse_hex_color(hex, rgb)) {
+    httpd_resp_send_err(req, HTTPD_400_BAD_REQUEST, "Bad hex");
+    return ESP_OK;
+  }
+
+  // Queue length is 1 — overwrite to replace previous value
+  xQueueOverwrite(color_queue, &rgb);
+
+  httpd_resp_sendstr(req, "OK\n");
+  return ESP_OK;
+}
+
+static httpd_handle_t start_http_server() {
+  httpd_config_t config = HTTPD_DEFAULT_CONFIG();
+  config.server_port = 8080;
+
+  httpd_handle_t server = NULL;
+  if (httpd_start(&server, &config) != ESP_OK) {
+    ESP_LOGE(TAG, "Failed to start HTTP server");
+    return NULL;
+  }
+
+  httpd_uri_t color_uri = {};
+  color_uri.uri = "/color";
+  color_uri.method = HTTP_GET;
+  color_uri.handler = color_get_handler;
+  httpd_register_uri_handler(server, &color_uri);
+
+  ESP_LOGI(TAG, "HTTP server started on port %d", config.server_port);
+  return server;
+}
 
 static void event_handler(void *arg, esp_event_base_t event_base,
                           int32_t event_id, void *event_data) {
@@ -154,6 +123,9 @@ static void event_handler(void *arg, esp_event_base_t event_base,
     ESP_LOGI(TAG, "Station got IP");
     ESP_LOGI(TAG, "Got IP: " IPSTR, IP2STR(&event->ip_info.ip));
     connected = true;
+    if (server == NULL) {
+      server = start_http_server();
+    }
   }
 }
 
@@ -300,6 +272,9 @@ int parse_hex_digit(char digit) {
   return -1;
 }
 
+// Returning a boolean so that http can either send an error or continue
+// Passing out as a parameter that is changed directly so that the rgb is
+// returned too
 bool parse_hex_color(const char *hex_color, Rgb &out) {
   if (!hex_color) {
     ESP_LOGE(TAG, "Invalid hex color: %s", hex_color);
