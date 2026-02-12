@@ -1,4 +1,4 @@
 idf_component_register(
-    SRCS "../rgbLED/rgbLED.cpp"
+    SRCS "../miniOS/miniOS.cpp"
     INCLUDE_DIRS "."
 )
