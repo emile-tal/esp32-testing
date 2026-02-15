@@ -1,4 +1,4 @@
 idf_component_register(
-    SRCS "../miniOS/miniOS.cpp"
+    SRCS "../microphone/microphone.cpp"
     INCLUDE_DIRS "."
 )

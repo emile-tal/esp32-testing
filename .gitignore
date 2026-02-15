@@ -12,3 +12,5 @@ sdkconfig.save
 
 # OS junk
 .DS_Store
+
+.vscode
