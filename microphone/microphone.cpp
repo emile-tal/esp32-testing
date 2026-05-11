@@ -27,11 +27,17 @@ static const char *TAG = "MICROPHONE";
 static i2s_chan_handle_t rx_handle = nullptr;
 
 static constexpr int kSeconds = 5;
+// I2S runs at 48 kHz so the INMP441 stays in its happy BCLK range
+// (~3 MHz). We then average every 3 raw samples to produce a clean 16 kHz
+// output stream — downstream consumers still receive 16 kHz.
+static constexpr int kI2SSampleRate = 48000;
 static constexpr int kSampleRate = 16000;
+static constexpr int kDecimation = kI2SSampleRate / kSampleRate;
 static constexpr int kChannels = 1;
 static constexpr int kBitsPerSample = 16;
 static constexpr int kTotalSamples = kSeconds * kSampleRate;
 static constexpr int kChunkSamples = 256;
+static constexpr int kWarmupSamples = kI2SSampleRate / 20; // 50 ms
 
 static int32_t raw_chunk[kChunkSamples];
 static int16_t pcm_recording[kTotalSamples];
@@ -45,7 +51,7 @@ static void i2s_init_mic() {
   ESP_ERROR_CHECK(i2s_new_channel(&chan_cfg, nullptr, &rx_handle));
 
   i2s_std_config_t std_cfg = {
-      .clk_cfg = I2S_STD_CLK_DEFAULT_CONFIG(kSampleRate),
+      .clk_cfg = I2S_STD_CLK_DEFAULT_CONFIG(kI2SSampleRate),
       .slot_cfg = I2S_STD_PHILIPS_SLOT_DEFAULT_CONFIG(I2S_DATA_BIT_WIDTH_32BIT,
                                                       I2S_SLOT_MODE_MONO),
       .gpio_cfg =
@@ -86,7 +92,23 @@ static inline int16_t sample32_to_16(int32_t sample) {
 }
 
 static void read_mic_data() {
+  // Warm-up: discard ~50 ms of samples so the INMP441's internal filters
+  // settle before we start recording.
+  int discarded = 0;
+  while (discarded < kWarmupSamples) {
+    size_t bytes_read = 0;
+    esp_err_t err = i2s_channel_read(rx_handle, raw_chunk, sizeof(raw_chunk),
+                                     &bytes_read, portMAX_DELAY);
+    if (err != ESP_OK) {
+      ESP_LOGE(TAG, "warmup i2s_channel_read failed: %s", esp_err_to_name(err));
+      continue;
+    }
+    discarded += (int)(bytes_read / sizeof(int32_t));
+  }
+
   int written_samples = 0;
+  int64_t accum = 0;
+  int accum_count = 0;
   while (written_samples < kTotalSamples) {
     size_t bytes_read = 0;
     esp_err_t err = i2s_channel_read(rx_handle, raw_chunk, sizeof(raw_chunk),
@@ -103,12 +125,18 @@ static void read_mic_data() {
     }
 
     for (int i = 0; i < samples_read && written_samples < kTotalSamples; i++) {
-      int32_t sample = raw_chunk[i];
-      int16_t pcm_sample = sample32_to_16(sample);
-      pcm_recording[written_samples++] = pcm_sample;
+      accum += raw_chunk[i];
+      accum_count++;
+      if (accum_count == kDecimation) {
+        int32_t avg = (int32_t)(accum / kDecimation);
+        pcm_recording[written_samples++] = sample32_to_16(avg);
+        accum = 0;
+        accum_count = 0;
+      }
     }
   }
-  ESP_LOGI(TAG, "Recorded %d samples", written_samples);
+  ESP_LOGI(TAG, "Recorded %d samples at %d Hz (I2S %d Hz, decimation %dx)",
+           written_samples, kSampleRate, kI2SSampleRate, kDecimation);
 }
 
 static bool send_all(int sock, const void *data, size_t len) {
