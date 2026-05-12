@@ -5,6 +5,7 @@ void app_main(void);
 #include "esp_event.h"
 #include "esp_log.h"
 #include "esp_netif.h"
+#include "esp_timer.h"
 #include "esp_wifi.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/event_groups.h"
@@ -14,6 +15,8 @@ void app_main(void);
 #include "sdkconfig.h"
 }
 #include "driver/gpio.h"
+#include <math.h>
+#include <stdint.h>
 #include <string.h>
 
 static constexpr gpio_num_t I2S_SCK = GPIO_NUM_4; // BCLK
@@ -27,17 +30,21 @@ static const char *TAG = "MICROPHONE";
 static i2s_chan_handle_t rx_handle = nullptr;
 
 static constexpr int kSeconds = 5;
-// I2S runs at 48 kHz so the INMP441 stays in its happy BCLK range
-// (~3 MHz). We then average every 3 raw samples to produce a clean 16 kHz
-// output stream — downstream consumers still receive 16 kHz.
-static constexpr int kI2SSampleRate = 48000;
+// I2S runs at 48 kHz so the INMP441 stays in its happy BCLK range (~3 MHz).
+// IDF's I2S driver in PHILIPS + MONO mode delivers BOTH slot positions to
+// DMA per frame (the inactive slot is a duplicate of the active one), so the
+// effective sample stream we receive is 2× the configured rate. We account
+// for that here: effective input rate = 96 kHz, decimate by 6 to land on
+// a clean 16 kHz output that downstream consumers expect.
+static constexpr int kI2SAskedRate = 48000;
+static constexpr int kI2SEffectiveRate = kI2SAskedRate * 2;
 static constexpr int kSampleRate = 16000;
-static constexpr int kDecimation = kI2SSampleRate / kSampleRate;
+static constexpr int kDecimation = kI2SEffectiveRate / kSampleRate;
 static constexpr int kChannels = 1;
 static constexpr int kBitsPerSample = 16;
 static constexpr int kTotalSamples = kSeconds * kSampleRate;
 static constexpr int kChunkSamples = 256;
-static constexpr int kWarmupSamples = kI2SSampleRate / 20; // 50 ms
+static constexpr int kWarmupSamples = kI2SEffectiveRate / 20; // 50 ms
 
 static int32_t raw_chunk[kChunkSamples];
 static int16_t pcm_recording[kTotalSamples];
@@ -51,7 +58,7 @@ static void i2s_init_mic() {
   ESP_ERROR_CHECK(i2s_new_channel(&chan_cfg, nullptr, &rx_handle));
 
   i2s_std_config_t std_cfg = {
-      .clk_cfg = I2S_STD_CLK_DEFAULT_CONFIG(kI2SSampleRate),
+      .clk_cfg = I2S_STD_CLK_DEFAULT_CONFIG(kI2SAskedRate),
       .slot_cfg = I2S_STD_PHILIPS_SLOT_DEFAULT_CONFIG(I2S_DATA_BIT_WIDTH_32BIT,
                                                       I2S_SLOT_MODE_MONO),
       .gpio_cfg =
@@ -91,6 +98,37 @@ static inline int16_t sample32_to_16(int32_t sample) {
   return clamp_int16(sample >> 14);
 }
 
+static void log_recording_stats(int64_t capture_us, int64_t raw_samples_seen) {
+  int32_t min_v = INT32_MAX;
+  int32_t max_v = INT32_MIN;
+  int64_t sum = 0;
+  int64_t sum_sq = 0;
+  for (int i = 0; i < kTotalSamples; i++) {
+    int32_t s = pcm_recording[i];
+    if (s < min_v)
+      min_v = s;
+    if (s > max_v)
+      max_v = s;
+    sum += s;
+    sum_sq += (int64_t)s * s;
+  }
+  double mean = (double)sum / kTotalSamples;
+  double rms = sqrt((double)sum_sq / kTotalSamples);
+
+  double capture_s = (double)capture_us / 1e6;
+  double effective_raw_rate = (double)raw_samples_seen / capture_s;
+  double effective_out_rate = (double)kTotalSamples / capture_s;
+
+  ESP_LOGI(TAG,
+           "stats: wall=%.3fs (expected %ds) | raw_samples=%lld | "
+           "effective_raw=%.0f Hz (asked %d, expected %d after driver 2x) | "
+           "effective_out=%.0f Hz (claimed %d)",
+           capture_s, kSeconds, (long long)raw_samples_seen, effective_raw_rate,
+           kI2SAskedRate, kI2SEffectiveRate, effective_out_rate, kSampleRate);
+  ESP_LOGI(TAG, "samples: min=%ld max=%ld mean=%.1f rms=%.1f", (long)min_v,
+           (long)max_v, mean, rms);
+}
+
 static void read_mic_data() {
   // Warm-up: discard ~50 ms of samples so the INMP441's internal filters
   // settle before we start recording.
@@ -105,6 +143,9 @@ static void read_mic_data() {
     }
     discarded += (int)(bytes_read / sizeof(int32_t));
   }
+
+  int64_t t_start = esp_timer_get_time();
+  int64_t raw_samples_seen = 0;
 
   int written_samples = 0;
   int64_t accum = 0;
@@ -123,6 +164,7 @@ static void read_mic_data() {
     if (samples_read <= 0) {
       continue;
     }
+    raw_samples_seen += samples_read;
 
     for (int i = 0; i < samples_read && written_samples < kTotalSamples; i++) {
       accum += raw_chunk[i];
@@ -135,8 +177,15 @@ static void read_mic_data() {
       }
     }
   }
-  ESP_LOGI(TAG, "Recorded %d samples at %d Hz (I2S %d Hz, decimation %dx)",
-           written_samples, kSampleRate, kI2SSampleRate, kDecimation);
+
+  int64_t capture_us = esp_timer_get_time() - t_start;
+
+  ESP_LOGI(TAG,
+           "Recorded %d samples at %d Hz (I2S asked %d, effective %d, "
+           "decimation %dx)",
+           written_samples, kSampleRate, kI2SAskedRate, kI2SEffectiveRate,
+           kDecimation);
+  log_recording_stats(capture_us, raw_samples_seen);
 }
 
 static bool send_all(int sock, const void *data, size_t len) {
